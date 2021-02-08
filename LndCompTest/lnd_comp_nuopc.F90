@@ -218,7 +218,7 @@ contains
   !===============================================================================
   subroutine ModelAdvance(gcomp, rc)
 
-    use lsm_noah, only: lsm_noah_run ! tmp test
+    !use lsm_noah, only: lsm_noah_run ! tmp test
     
     ! Arguments
     type(ESMF_GridComp)  :: gcomp
