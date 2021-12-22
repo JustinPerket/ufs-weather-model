@@ -12,6 +12,7 @@ sfc_diff.f
 sfc_drv.f
 sfc_drv_loop.F90
 surface_perturbation.F90
+sflx.f
 "
 
 for file in $ccpp_files; do

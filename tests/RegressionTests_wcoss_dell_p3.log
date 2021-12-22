@@ -1,24 +1,24 @@
-Thu Sep 30 09:24:29 UTC 2021
+Tue Dec 21 00:38:27 UTC 2021
 Start Regression test
 
-Compile 001 elapsed time 1456 seconds. -DAPP=S2S -DCCPP_SUITES=FV3_GFS_2017_coupled,FV3_GFS_v16_coupled,FV3_GFS_v16_couplednsst -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
-Compile 002 elapsed time 2016 seconds. -DAPP=S2SW -DCCPP_SUITES=FV3_GFS_2017_coupled,FV3_GFS_v16_coupled,FV3_GFS_v16_coupled_nsstNoahmpUGWPv1 -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
-Compile 003 elapsed time 466 seconds. -DAPP=S2S -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_2017_coupled -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
-Compile 004 elapsed time 1391 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v15_thompson_mynn,FV3_GFS_v15_thompson_mynn_RRTMGP,FV3_GSD_v0,FV3_RAP,FV3_HRRR,FV3_RRFS_v1beta,FV3_RRFS_v1alpha -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 005 elapsed time 1428 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_thompson,FV3_GFS_v16_noahmp,FV3_HAFS_v0_hwrf_thompson,FV3_HAFS_v0_hwrf -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 006 elapsed time 359 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_noahmp,FV3_GFS_v16_thompson,FV3_GFS_v15_thompson_mynn,FV3_GSD_v0,FV3_RRFS_v1beta,FV3_RRFS_v1alpha -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
-Compile 007 elapsed time 247 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_HAFS_v0_hwrf_thompson,FV3_HAFS_v0_hwrf -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
-Compile 008 elapsed time 1205 seconds. -DAPP=HAFS -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 009 elapsed time 1267 seconds. -DAPP=HAFS-ALL -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
-Compile 010 elapsed time 752 seconds. -DAPP=NG-GODAS-NEMSDATM -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
-Compile 011 elapsed time 281 seconds. -DAPP=NG-GODAS-NEMSDATM -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
-Compile 012 elapsed time 791 seconds. -DAPP=NG-GODAS -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
-Compile 013 elapsed time 368 seconds. -DAPP=NG-GODAS -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
-Compile 014 elapsed time 969 seconds. -DAPP=ATMW -DCCPP_SUITES=FV3_GFS_v16 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 001 elapsed time 1656 seconds. -DAPP=S2SW -DCCPP_SUITES=FV3_GFS_v16_coupled_nsstNoahmpUGWPv1,FV3_GFS_v16_coupled_p7_rrtmgp -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 002 elapsed time 526 seconds. -DAPP=S2S -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16_coupled_nsstNoahmpUGWPv1 -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
+Compile 003 elapsed time 1143 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v15_thompson_mynn,FV3_GFS_v15_thompson_mynn_RRTMGP,FV3_GFS_v16_nsstNoahmpUGWPv1,FV3_GFS_v16_p7_rrtmgp -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 004 elapsed time 1080 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_RAP,FV3_RAP_sfcdiff,FV3_HRRR,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 005 elapsed time 1337 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_thompson,FV3_GFS_v16_noahmp,FV3_HAFS_v0_hwrf_thompson -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 006 elapsed time 877 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_fv3wam -D32BIT=ON -DMULTI_GASES=ON -DREPRO=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Bitforbit
+Compile 007 elapsed time 449 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_noahmp,FV3_GFS_v16_thompson,FV3_GFS_v15_thompson_mynn,FV3_GFS_v16_nsstNoahmpUGWPv1 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 008 elapsed time 423 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_RAP,FV3_RAP_cires_ugwp,FV3_RAP_unified_ugwp,FV3_RAP_noah,FV3_RAP_RRTMGP,FV3_RAP_sfcdiff,FV3_RAP_flake,FV3_RAP_noah_sfcdiff_cires_ugwp,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 009 elapsed time 283 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_HAFS_v0_hwrf_thompson -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 010 elapsed time 1151 seconds. -DAPP=HAFSW -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 011 elapsed time 1218 seconds. -DAPP=HAFS-ALL -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 012 elapsed time 793 seconds. -DAPP=NG-GODAS -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 013 elapsed time 321 seconds. -DAPP=NG-GODAS -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
+Compile 014 elapsed time 917 seconds. -DAPP=ATMW -DCCPP_SUITES=FV3_GFS_v16 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_control
-Checking test 001 cpld_control results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_control_p7
+Checking test 001 cpld_control_p7 results ....
  Comparing sfcf024.tile1.nc .........OK
  Comparing sfcf024.tile2.nc .........OK
  Comparing sfcf024.tile3.nc .........OK
@@ -64,17 +64,20 @@ Checking test 001 cpld_control results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-04-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-04-00000.nc .........OK
+ Comparing RESTART/iced.2021-03-23-21600.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+ Comparing 20210323.060000.out_grd.glo_1deg .........OK
+ Comparing 20210323.060000.out_pnt.points .........OK
+ Comparing 20210323.060000.restart.glo_1deg .........OK
 
-[0] The total amount of wall time                        = 101.704940
+[0] The total amount of wall time                        = 247.992203
 
-Test 001 cpld_control PASS
+Test 001 cpld_control_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_restart
-Checking test 002 cpld_restart results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_p7_rrtmgp
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_control_p7_rrtmgp
+Checking test 002 cpld_control_p7_rrtmgp results ....
  Comparing sfcf024.tile1.nc .........OK
  Comparing sfcf024.tile2.nc .........OK
  Comparing sfcf024.tile3.nc .........OK
@@ -120,17 +123,20 @@ Checking test 002 cpld_restart results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-04-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-04-00000.nc .........OK
+ Comparing RESTART/iced.2021-03-23-21600.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+ Comparing 20210323.060000.out_grd.glo_1deg .........OK
+ Comparing 20210323.060000.out_pnt.points .........OK
+ Comparing 20210323.060000.restart.glo_1deg .........OK
 
-[0] The total amount of wall time                        = 66.604099
+[0] The total amount of wall time                        = 332.845984
 
-Test 002 cpld_restart PASS
+Test 002 cpld_control_p7_rrtmgp PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_2threads
-Checking test 003 cpld_2threads results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_2threads_p7
+Checking test 003 cpld_2threads_p7 results ....
  Comparing sfcf024.tile1.nc .........OK
  Comparing sfcf024.tile2.nc .........OK
  Comparing sfcf024.tile3.nc .........OK
@@ -176,17 +182,20 @@ Checking test 003 cpld_2threads results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-04-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-04-00000.nc .........OK
+ Comparing RESTART/iced.2021-03-23-21600.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+ Comparing 20210323.060000.out_grd.glo_1deg .........OK
+ Comparing 20210323.060000.out_pnt.points .........OK
+ Comparing 20210323.060000.restart.glo_1deg .........OK
 
-[0] The total amount of wall time                        = 96.021969
+[0] The total amount of wall time                        = 233.923872
 
-Test 003 cpld_2threads PASS
+Test 003 cpld_2threads_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_decomp
-Checking test 004 cpld_decomp results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_decomp_p7
+Checking test 004 cpld_decomp_p7 results ....
  Comparing sfcf024.tile1.nc .........OK
  Comparing sfcf024.tile2.nc .........OK
  Comparing sfcf024.tile3.nc .........OK
@@ -232,17 +241,20 @@ Checking test 004 cpld_decomp results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-04-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-04-00000.nc .........OK
+ Comparing RESTART/iced.2021-03-23-21600.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+ Comparing 20210323.060000.out_grd.glo_1deg .........OK
+ Comparing 20210323.060000.out_pnt.points .........OK
+ Comparing 20210323.060000.restart.glo_1deg .........OK
 
-[0] The total amount of wall time                        = 98.774103
+[0] The total amount of wall time                        = 248.363020
 
-Test 004 cpld_decomp PASS
+Test 004 cpld_decomp_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_ca
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_ca
-Checking test 005 cpld_ca results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_mpi_p7
+Checking test 005 cpld_mpi_p7 results ....
  Comparing sfcf024.tile1.nc .........OK
  Comparing sfcf024.tile2.nc .........OK
  Comparing sfcf024.tile3.nc .........OK
@@ -288,394 +300,20 @@ Checking test 005 cpld_ca results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-04-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-04-00000.nc .........OK
+ Comparing RESTART/iced.2021-03-23-21600.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+ Comparing 20210323.060000.out_grd.glo_1deg .........OK
+ Comparing 20210323.060000.out_pnt.points .........OK
+ Comparing 20210323.060000.restart.glo_1deg .........OK
 
-[0] The total amount of wall time                        = 98.158762
+[0] The total amount of wall time                        = 213.968899
 
-Test 005 cpld_ca PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control_c192
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_control_c192
-Checking test 006 cpld_control_c192 results ....
- Comparing sfcf048.tile1.nc .........OK
- Comparing sfcf048.tile2.nc .........OK
- Comparing sfcf048.tile3.nc .........OK
- Comparing sfcf048.tile4.nc .........OK
- Comparing sfcf048.tile5.nc .........OK
- Comparing sfcf048.tile6.nc .........OK
- Comparing atmf048.tile1.nc .........OK
- Comparing atmf048.tile2.nc .........OK
- Comparing atmf048.tile3.nc .........OK
- Comparing atmf048.tile4.nc .........OK
- Comparing atmf048.tile5.nc .........OK
- Comparing atmf048.tile6.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-05-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-05-00000.nc .........OK
-
-[0] The total amount of wall time                        = 411.893232
-
-Test 006 cpld_control_c192 PASS
+Test 005 cpld_mpi_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control_c192
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_restart_c192
-Checking test 007 cpld_restart_c192 results ....
- Comparing sfcf048.tile1.nc .........OK
- Comparing sfcf048.tile2.nc .........OK
- Comparing sfcf048.tile3.nc .........OK
- Comparing sfcf048.tile4.nc .........OK
- Comparing sfcf048.tile5.nc .........OK
- Comparing sfcf048.tile6.nc .........OK
- Comparing atmf048.tile1.nc .........OK
- Comparing atmf048.tile2.nc .........OK
- Comparing atmf048.tile3.nc .........OK
- Comparing atmf048.tile4.nc .........OK
- Comparing atmf048.tile5.nc .........OK
- Comparing atmf048.tile6.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-05-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-05-00000.nc .........OK
-
-[0] The total amount of wall time                        = 312.839078
-
-Test 007 cpld_restart_c192 PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control_c384
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_control_c384
-Checking test 008 cpld_control_c384 results ....
- Comparing sfcf012.tile1.nc .........OK
- Comparing sfcf012.tile2.nc .........OK
- Comparing sfcf012.tile3.nc .........OK
- Comparing sfcf012.tile4.nc .........OK
- Comparing sfcf012.tile5.nc .........OK
- Comparing sfcf012.tile6.nc .........OK
- Comparing atmf012.tile1.nc .........OK
- Comparing atmf012.tile2.nc .........OK
- Comparing atmf012.tile3.nc .........OK
- Comparing atmf012.tile4.nc .........OK
- Comparing atmf012.tile5.nc .........OK
- Comparing atmf012.tile6.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/MOM.res_1.nc .........OK
- Comparing RESTART/MOM.res_2.nc .........OK
- Comparing RESTART/MOM.res_3.nc .........OK
- Comparing RESTART/iced.2016-10-03-43200.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-03-43200.nc .........OK
-
-[0] The total amount of wall time                        = 812.275467
-
-Test 008 cpld_control_c384 PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control_c384
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_restart_c384
-Checking test 009 cpld_restart_c384 results ....
- Comparing sfcf012.tile1.nc .........OK
- Comparing sfcf012.tile2.nc .........OK
- Comparing sfcf012.tile3.nc .........OK
- Comparing sfcf012.tile4.nc .........OK
- Comparing sfcf012.tile5.nc .........OK
- Comparing sfcf012.tile6.nc .........OK
- Comparing atmf012.tile1.nc .........OK
- Comparing atmf012.tile2.nc .........OK
- Comparing atmf012.tile3.nc .........OK
- Comparing atmf012.tile4.nc .........OK
- Comparing atmf012.tile5.nc .........OK
- Comparing atmf012.tile6.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/MOM.res_1.nc .........OK
- Comparing RESTART/MOM.res_2.nc .........OK
- Comparing RESTART/MOM.res_3.nc .........OK
- Comparing RESTART/iced.2016-10-03-43200.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-03-43200.nc .........OK
-
-[0] The total amount of wall time                        = 478.271887
-
-Test 009 cpld_restart_c384 PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_bmark_v16
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_bmark_v16
-Checking test 010 cpld_bmark_v16 results ....
- Comparing sfcf006.nc .........OK
- Comparing atmf006.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/MOM.res_1.nc .........OK
- Comparing RESTART/MOM.res_2.nc .........OK
- Comparing RESTART/MOM.res_3.nc .........OK
- Comparing RESTART/iced.2013-04-01-21600.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
-
-[0] The total amount of wall time                        = 669.143013
-
-Test 010 cpld_bmark_v16 PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_bmark_v16
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_restart_bmark_v16
-Checking test 011 cpld_restart_bmark_v16 results ....
- Comparing sfcf006.nc .........OK
- Comparing atmf006.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/MOM.res_1.nc .........OK
- Comparing RESTART/MOM.res_2.nc .........OK
- Comparing RESTART/MOM.res_3.nc .........OK
- Comparing RESTART/iced.2013-04-01-21600.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
-
-[0] The total amount of wall time                        = 413.072864
-
-Test 011 cpld_restart_bmark_v16 PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_bmark_v16_nsst
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_bmark_v16_nsst
-Checking test 012 cpld_bmark_v16_nsst results ....
- Comparing sfcf006.nc .........OK
- Comparing atmf006.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/MOM.res_1.nc .........OK
- Comparing RESTART/MOM.res_2.nc .........OK
- Comparing RESTART/MOM.res_3.nc .........OK
- Comparing RESTART/iced.2013-04-01-21600.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
-
-[0] The total amount of wall time                        = 674.876981
-
-Test 012 cpld_bmark_v16_nsst PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_bmark_wave_v16
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_bmark_wave_v16
-Checking test 013 cpld_bmark_wave_v16 results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_bmark_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_bmark_p7
+Checking test 006 cpld_bmark_p7 results ....
  Comparing sfcf006.nc .........OK
  Comparing atmf006.nc .........OK
  Comparing 20130401.060000.out_grd.gwes_30m .........OK
@@ -719,14 +357,14 @@ Checking test 013 cpld_bmark_wave_v16 results ....
  Comparing RESTART/iced.2013-04-01-21600.nc .........OK
  Comparing RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
 
-[0] The total amount of wall time                        = 807.114865
+[0] The total amount of wall time                        = 1049.778788
 
-Test 013 cpld_bmark_wave_v16 PASS
+Test 006 cpld_bmark_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_bmark_wave_v16_p7b
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_bmark_wave_v16_p7b
-Checking test 014 cpld_bmark_wave_v16_p7b results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_bmark_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_bmark_mpi_p7
+Checking test 007 cpld_bmark_mpi_p7 results ....
  Comparing sfcf006.nc .........OK
  Comparing atmf006.nc .........OK
  Comparing 20130401.060000.out_grd.gwes_30m .........OK
@@ -770,14 +408,14 @@ Checking test 014 cpld_bmark_wave_v16_p7b results ....
  Comparing RESTART/iced.2013-04-01-21600.nc .........OK
  Comparing RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
 
-[0] The total amount of wall time                        = 886.588447
+[0] The total amount of wall time                        = 1043.072032
 
-Test 014 cpld_bmark_wave_v16_p7b PASS
+Test 007 cpld_bmark_mpi_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_control_wave
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_control_wave
-Checking test 015 cpld_control_wave results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_c96_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_control_c96_p7
+Checking test 008 cpld_control_c96_p7 results ....
  Comparing sfcf024.tile1.nc .........OK
  Comparing sfcf024.tile2.nc .........OK
  Comparing sfcf024.tile3.nc .........OK
@@ -823,20 +461,283 @@ Checking test 015 cpld_control_wave results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-04-00000.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-04-00000.nc .........OK
- Comparing 20161004.000000.out_grd.glo_1deg .........OK
- Comparing 20161004.000000.out_pnt.points .........OK
- Comparing 20161004.000000.restart.glo_1deg .........OK
+ Comparing RESTART/iced.2021-03-23-21600.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
 
-[0] The total amount of wall time                        = 124.427660
+[0] The total amount of wall time                        = 236.297444
 
-Test 015 cpld_control_wave PASS
+Test 008 cpld_control_c96_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/cpld_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/cpld_debug
-Checking test 016 cpld_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_c96_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_restart_c96_p7
+Checking test 009 cpld_restart_c96_p7 results ....
+ Comparing sfcf024.tile1.nc .........OK
+ Comparing sfcf024.tile2.nc .........OK
+ Comparing sfcf024.tile3.nc .........OK
+ Comparing sfcf024.tile4.nc .........OK
+ Comparing sfcf024.tile5.nc .........OK
+ Comparing sfcf024.tile6.nc .........OK
+ Comparing atmf024.tile1.nc .........OK
+ Comparing atmf024.tile2.nc .........OK
+ Comparing atmf024.tile3.nc .........OK
+ Comparing atmf024.tile4.nc .........OK
+ Comparing atmf024.tile5.nc .........OK
+ Comparing atmf024.tile6.nc .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+ Comparing RESTART/MOM.res.nc .........OK
+ Comparing RESTART/iced.2021-03-23-21600.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+
+[0] The total amount of wall time                        = 129.056057
+
+Test 009 cpld_restart_c96_p7 PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_c192_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_control_c192_p7
+Checking test 010 cpld_control_c192_p7 results ....
+ Comparing sfcf036.tile1.nc .........OK
+ Comparing sfcf036.tile2.nc .........OK
+ Comparing sfcf036.tile3.nc .........OK
+ Comparing sfcf036.tile4.nc .........OK
+ Comparing sfcf036.tile5.nc .........OK
+ Comparing sfcf036.tile6.nc .........OK
+ Comparing atmf036.tile1.nc .........OK
+ Comparing atmf036.tile2.nc .........OK
+ Comparing atmf036.tile3.nc .........OK
+ Comparing atmf036.tile4.nc .........OK
+ Comparing atmf036.tile5.nc .........OK
+ Comparing atmf036.tile6.nc .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+ Comparing RESTART/MOM.res.nc .........OK
+ Comparing RESTART/iced.2021-03-23-64800.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-64800.nc .........OK
+
+[0] The total amount of wall time                        = 997.026120
+
+Test 010 cpld_control_c192_p7 PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_c192_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_restart_c192_p7
+Checking test 011 cpld_restart_c192_p7 results ....
+ Comparing sfcf036.tile1.nc .........OK
+ Comparing sfcf036.tile2.nc .........OK
+ Comparing sfcf036.tile3.nc .........OK
+ Comparing sfcf036.tile4.nc .........OK
+ Comparing sfcf036.tile5.nc .........OK
+ Comparing sfcf036.tile6.nc .........OK
+ Comparing atmf036.tile1.nc .........OK
+ Comparing atmf036.tile2.nc .........OK
+ Comparing atmf036.tile3.nc .........OK
+ Comparing atmf036.tile4.nc .........OK
+ Comparing atmf036.tile5.nc .........OK
+ Comparing atmf036.tile6.nc .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+ Comparing RESTART/MOM.res.nc .........OK
+ Comparing RESTART/iced.2021-03-23-64800.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-64800.nc .........OK
+
+[0] The total amount of wall time                        = 620.181887
+
+Test 011 cpld_restart_c192_p7 PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_c384_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_control_c384_p7
+Checking test 012 cpld_control_c384_p7 results ....
+ Comparing sfcf006.nc .........OK
+ Comparing atmf006.nc .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+ Comparing RESTART/MOM.res.nc .........OK
+ Comparing RESTART/MOM.res_1.nc .........OK
+ Comparing RESTART/MOM.res_2.nc .........OK
+ Comparing RESTART/MOM.res_3.nc .........OK
+ Comparing RESTART/iced.2021-03-22-43200.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc .........OK
+
+[0] The total amount of wall time                        = 1114.741140
+
+Test 012 cpld_control_c384_p7 PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_control_c384_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_restart_c384_p7
+Checking test 013 cpld_restart_c384_p7 results ....
+ Comparing sfcf006.nc .........OK
+ Comparing atmf006.nc .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+ Comparing RESTART/MOM.res.nc .........OK
+ Comparing RESTART/MOM.res_1.nc .........OK
+ Comparing RESTART/MOM.res_2.nc .........OK
+ Comparing RESTART/MOM.res_3.nc .........OK
+ Comparing RESTART/iced.2021-03-22-43200.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc .........OK
+
+[0] The total amount of wall time                        = 602.823290
+
+Test 013 cpld_restart_c384_p7 PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/cpld_debug_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/cpld_debug_p7
+Checking test 014 cpld_debug_p7 results ....
  Comparing sfcf006.tile1.nc .........OK
  Comparing sfcf006.tile2.nc .........OK
  Comparing sfcf006.tile3.nc .........OK
@@ -882,17 +783,17 @@ Checking test 016 cpld_debug results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2016-10-03-21600.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2016-10-03-21600.nc .........OK
+ Comparing RESTART/iced.2021-03-22-43200.nc .........OK
+ Comparing RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc .........OK
 
-[0] The total amount of wall time                        = 305.785968
+[0] The total amount of wall time                        = 708.927432
 
-Test 016 cpld_debug PASS
+Test 014 cpld_debug_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control
-Checking test 017 control results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control
+Checking test 015 control results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf021.nc .........OK
  Comparing sfcf024.nc .........OK
@@ -938,14 +839,14 @@ Checking test 017 control results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 170.039449
+[0] The total amount of wall time                        = 139.938191
 
-Test 017 control PASS
+Test 015 control PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_decomp
-Checking test 018 control_decomp results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_decomp
+Checking test 016 control_decomp results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -987,14 +888,14 @@ Checking test 018 control_decomp results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 174.392005
+[0] The total amount of wall time                        = 146.510769
 
-Test 018 control_decomp PASS
+Test 016 control_decomp PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_2threads
-Checking test 019 control_2threads results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_2threads
+Checking test 017 control_2threads results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1036,14 +937,14 @@ Checking test 019 control_2threads results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 157.483180
+[0] The total amount of wall time                        = 129.589069
 
-Test 019 control_2threads PASS
+Test 017 control_2threads PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_restart
-Checking test 020 control_restart results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_restart
+Checking test 018 control_restart results ....
  Comparing sfcf024.nc .........OK
  Comparing atmf024.nc .........OK
  Comparing GFSFLX.GrbF24 .........OK
@@ -1081,14 +982,14 @@ Checking test 020 control_restart results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 74.357438
+[0] The total amount of wall time                        = 74.875214
 
-Test 020 control_restart PASS
+Test 018 control_restart PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_fhzero
-Checking test 021 control_fhzero results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_fhzero
+Checking test 019 control_fhzero results ....
  Comparing sfcf000.nc ............ALT CHECK......OK
  Comparing sfcf021.nc ............ALT CHECK......OK
  Comparing atmf000.nc .........OK
@@ -1130,14 +1031,14 @@ Checking test 021 control_fhzero results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 170.389603
+[0] The total amount of wall time                        = 133.814342
 
-Test 021 control_fhzero PASS
+Test 019 control_fhzero PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_CubedSphereGrid
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_CubedSphereGrid
-Checking test 022 control_CubedSphereGrid results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_CubedSphereGrid
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_CubedSphereGrid
+Checking test 020 control_CubedSphereGrid results ....
  Comparing sfcf000.tile1.nc .........OK
  Comparing sfcf000.tile2.nc .........OK
  Comparing sfcf000.tile3.nc .........OK
@@ -1163,31 +1064,48 @@ Checking test 022 control_CubedSphereGrid results ....
  Comparing atmf024.tile5.nc .........OK
  Comparing atmf024.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 134.007921
+[0] The total amount of wall time                        = 136.177792
 
-Test 022 control_CubedSphereGrid PASS
+Test 020 control_CubedSphereGrid PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_wrtGauss_netcdf_parallel
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_wrtGauss_netcdf_parallel
-Checking test 023 control_wrtGauss_netcdf_parallel results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_latlon
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_latlon
+Checking test 021 control_latlon results ....
  Comparing sfcf000.nc .........OK
- Comparing sfcf024.nc ............ALT CHECK......OK
- Comparing atmf000.nc ............ALT CHECK......OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
+
+[0] The total amount of wall time                        = 139.711171
+
+Test 021 control_latlon PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_wrtGauss_netcdf_parallel
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_wrtGauss_netcdf_parallel
+Checking test 022 control_wrtGauss_netcdf_parallel results ....
+ Comparing sfcf000.nc ............ALT CHECK......OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
  Comparing atmf024.nc ............ALT CHECK......OK
  Comparing GFSFLX.GrbF00 .........OK
  Comparing GFSFLX.GrbF24 .........OK
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 197.652034
+[0] The total amount of wall time                        = 143.695264
 
-Test 023 control_wrtGauss_netcdf_parallel PASS
+Test 022 control_wrtGauss_netcdf_parallel PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_c48
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_c48
-Checking test 024 control_c48 results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_c48
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_c48
+Checking test 023 control_c48 results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1225,14 +1143,14 @@ Checking test 024 control_c48 results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 438.023891
+[0] The total amount of wall time                        = 442.345305
 
-Test 024 control_c48 PASS
+Test 023 control_c48 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_c192
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_c192
-Checking test 025 control_c192 results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_c192
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_c192
+Checking test 024 control_c192 results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1242,14 +1160,14 @@ Checking test 025 control_c192 results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 571.908172
+[0] The total amount of wall time                        = 552.465154
 
-Test 025 control_c192 PASS
+Test 024 control_c192 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_c384
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_c384
-Checking test 026 control_c384 results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_c384
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_c384
+Checking test 025 control_c384 results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf012.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1259,14 +1177,14 @@ Checking test 026 control_c384 results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF12 .........OK
 
-[0] The total amount of wall time                        = 1015.151371
+[0] The total amount of wall time                        = 1036.215958
 
-Test 026 control_c384 PASS
+Test 025 control_c384 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_c384gdas
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_c384gdas
-Checking test 027 control_c384gdas results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_c384gdas
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_c384gdas
+Checking test 026 control_c384gdas results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf006.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1308,14 +1226,14 @@ Checking test 027 control_c384gdas results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 917.397956
+[0] The total amount of wall time                        = 948.061075
 
-Test 027 control_c384gdas PASS
+Test 026 control_c384gdas PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_stochy
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_stochy
-Checking test 028 control_stochy results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_stochy
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_stochy
+Checking test 027 control_stochy results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf012.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1325,27 +1243,27 @@ Checking test 028 control_stochy results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF12 .........OK
 
-[0] The total amount of wall time                        = 121.371995
+[0] The total amount of wall time                        = 92.840988
 
-Test 028 control_stochy PASS
+Test 027 control_stochy PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_stochy
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_stochy_restart
-Checking test 029 control_stochy_restart results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_stochy
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_stochy_restart
+Checking test 028 control_stochy_restart results ....
  Comparing sfcf012.nc .........OK
  Comparing atmf012.nc .........OK
  Comparing GFSFLX.GrbF12 .........OK
  Comparing GFSPRS.GrbF12 .........OK
 
-[0] The total amount of wall time                        = 63.112781
+[0] The total amount of wall time                        = 51.523306
 
-Test 029 control_stochy_restart PASS
+Test 028 control_stochy_restart PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_ca
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_ca
-Checking test 030 control_ca results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_lndp
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_lndp
+Checking test 029 control_lndp results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf012.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1355,44 +1273,165 @@ Checking test 030 control_ca results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF12 .........OK
 
-[0] The total amount of wall time                        = 119.770464
+[0] The total amount of wall time                        = 85.060916
 
-Test 030 control_ca PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_ca
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_ca_restart
-Checking test 031 control_ca_restart results ....
- Comparing sfcf012.nc .........OK
- Comparing atmf012.nc .........OK
- Comparing GFSFLX.GrbF12 .........OK
- Comparing GFSPRS.GrbF12 .........OK
-
-[0] The total amount of wall time                        = 60.388524
-
-Test 031 control_ca_restart PASS
+Test 029 control_lndp PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_lndp
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_lndp
-Checking test 032 control_lndp results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_p7
+Checking test 030 control_p7 results ....
  Comparing sfcf000.nc .........OK
- Comparing sfcf012.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
- Comparing atmf012.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
  Comparing GFSFLX.GrbF00 .........OK
- Comparing GFSFLX.GrbF12 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
  Comparing GFSPRS.GrbF00 .........OK
- Comparing GFSPRS.GrbF12 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 122.383947
+[0] The total amount of wall time                        = 156.424344
 
-Test 032 control_lndp PASS
+Test 030 control_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_lheatstrg
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_lheatstrg
-Checking test 033 control_lheatstrg results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_p7_rrtmgp
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_p7_rrtmgp
+Checking test 031 control_p7_rrtmgp results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+
+[0] The total amount of wall time                        = 248.900674
+
+Test 031 control_p7_rrtmgp PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_restart_p7
+Checking test 032 control_restart_p7 results ....
+ Comparing sfcf024.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+
+[0] The total amount of wall time                        = 86.884488
+
+Test 032 control_restart_p7 PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_decomp_p7
+Checking test 033 control_decomp_p7 results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1401,15 +1440,47 @@ Checking test 033 control_lheatstrg results ....
  Comparing GFSFLX.GrbF24 .........OK
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 169.668685
+[0] The total amount of wall time                        = 162.213767
 
-Test 033 control_lheatstrg PASS
+Test 033 control_decomp_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_lseaspray
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_lseaspray
-Checking test 034 control_lseaspray results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_2threads_p7
+Checking test 034 control_2threads_p7 results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1418,58 +1489,91 @@ Checking test 034 control_lseaspray results ....
  Comparing GFSFLX.GrbF24 .........OK
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 179.038573
+[0] The total amount of wall time                        = 147.000237
 
-Test 034 control_lseaspray PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_merra2
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_merra2
-Checking test 035 control_merra2 results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf024.nc .........OK
- Comparing atmf000.nc .........OK
- Comparing atmf024.nc .........OK
- Comparing GFSFLX.GrbF00 .........OK
- Comparing GFSFLX.GrbF24 .........OK
- Comparing GFSPRS.GrbF00 .........OK
- Comparing GFSPRS.GrbF24 .........OK
-
-[0] The total amount of wall time                        = 197.553269
-
-Test 035 control_merra2 PASS
+Test 034 control_2threads_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_control
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_control
-Checking test 036 regional_control results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_control
+Checking test 035 regional_control results ....
+ Comparing dynf000.nc .........OK
+ Comparing dynf024.nc .........OK
+ Comparing phyf000.nc .........OK
+ Comparing phyf024.nc .........OK
+ Comparing PRSLEV.GrbF00 .........OK
+ Comparing PRSLEV.GrbF24 .........OK
+ Comparing NATLEV.GrbF00 .........OK
+ Comparing NATLEV.GrbF24 .........OK
+
+[0] The total amount of wall time                        = 344.171000
+
+Test 035 regional_control PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_restart
+Checking test 036 regional_restart results ....
+ Comparing dynf024.nc .........OK
+ Comparing phyf024.nc .........OK
+ Comparing PRSLEV.GrbF24 .........OK
+ Comparing NATLEV.GrbF24 .........OK
+
+[0] The total amount of wall time                        = 191.930040
+
+Test 036 regional_restart PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_noquilt
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_noquilt
+Checking test 037 regional_noquilt results ....
  Comparing atmos_4xdaily.nc .........OK
  Comparing fv3_history2d.nc .........OK
  Comparing fv3_history.nc .........OK
  Comparing RESTART/fv_core.res.tile1_new.nc .........OK
  Comparing RESTART/fv_tracer.res.tile1_new.nc .........OK
 
-[0] The total amount of wall time                        = 350.472968
+[0] The total amount of wall time                        = 372.288809
 
-Test 036 regional_control PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_restart
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_restart
-Checking test 037 regional_restart results ....
- Comparing atmos_4xdaily.nc .........OK
- Comparing fv3_history2d.nc .........OK
- Comparing fv3_history.nc .........OK
-
-[0] The total amount of wall time                        = 189.189560
-
-Test 037 regional_restart PASS
+Test 037 regional_noquilt PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_quilt
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_quilt
-Checking test 038 regional_quilt results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_2threads
+Checking test 038 regional_2threads results ....
  Comparing dynf000.nc .........OK
  Comparing dynf024.nc .........OK
  Comparing phyf000.nc .........OK
@@ -1479,31 +1583,14 @@ Checking test 038 regional_quilt results ....
  Comparing NATLEV.GrbF00 .........OK
  Comparing NATLEV.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 342.465890
+[0] The total amount of wall time                        = 196.638238
 
-Test 038 regional_quilt PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_quilt
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_quilt_2threads
-Checking test 039 regional_quilt_2threads results ....
- Comparing dynf000.nc .........OK
- Comparing dynf024.nc .........OK
- Comparing phyf000.nc .........OK
- Comparing phyf024.nc .........OK
- Comparing PRSLEV.GrbF00 .........OK
- Comparing PRSLEV.GrbF24 .........OK
- Comparing NATLEV.GrbF00 .........OK
- Comparing NATLEV.GrbF24 .........OK
-
-[0] The total amount of wall time                        = 191.157650
-
-Test 039 regional_quilt_2threads PASS
+Test 038 regional_2threads PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_quilt_hafs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_quilt_hafs
-Checking test 040 regional_quilt_hafs results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_hafs
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_hafs
+Checking test 039 regional_hafs results ....
  Comparing dynf000.nc .........OK
  Comparing dynf024.nc .........OK
  Comparing phyf000.nc .........OK
@@ -1511,28 +1598,27 @@ Checking test 040 regional_quilt_hafs results ....
  Comparing HURPRS.GrbF00 .........OK
  Comparing HURPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 343.638589
+[0] The total amount of wall time                        = 346.537789
 
-Test 040 regional_quilt_hafs PASS
+Test 039 regional_hafs PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_quilt_netcdf_parallel
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_quilt_netcdf_parallel
-Checking test 041 regional_quilt_netcdf_parallel results ....
- Comparing atmos_4xdaily.nc .........OK
- Comparing dynf000.nc .........OK
- Comparing dynf024.nc ............ALT CHECK......OK
- Comparing phyf000.nc ............ALT CHECK......OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_netcdf_parallel
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_netcdf_parallel
+Checking test 040 regional_netcdf_parallel results ....
+ Comparing dynf000.nc ............ALT CHECK......OK
+ Comparing dynf024.nc .........OK
+ Comparing phyf000.nc .........OK
  Comparing phyf024.nc ............ALT CHECK......OK
 
-[0] The total amount of wall time                        = 344.451175
+[0] The total amount of wall time                        = 347.003062
 
-Test 041 regional_quilt_netcdf_parallel PASS
+Test 040 regional_netcdf_parallel PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_quilt_RRTMGP
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_quilt_RRTMGP
-Checking test 042 regional_quilt_RRTMGP results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_RRTMGP
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_RRTMGP
+Checking test 041 regional_RRTMGP results ....
  Comparing dynf000.nc .........OK
  Comparing dynf024.nc .........OK
  Comparing phyf000.nc .........OK
@@ -1542,68 +1628,26 @@ Checking test 042 regional_quilt_RRTMGP results ....
  Comparing NATLEV.GrbF00 .........OK
  Comparing NATLEV.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 467.409643
+[0] The total amount of wall time                        = 589.097070
 
-Test 042 regional_quilt_RRTMGP PASS
+Test 041 regional_RRTMGP PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_gsd
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_gsd
-Checking test 043 fv3_gsd results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf024.tile1.nc .........OK
- Comparing sfcf024.tile2.nc .........OK
- Comparing sfcf024.tile3.nc .........OK
- Comparing sfcf024.tile4.nc .........OK
- Comparing sfcf024.tile5.nc .........OK
- Comparing sfcf024.tile6.nc .........OK
- Comparing sfcf027.tile1.nc .........OK
- Comparing sfcf027.tile2.nc .........OK
- Comparing sfcf027.tile3.nc .........OK
- Comparing sfcf027.tile4.nc .........OK
- Comparing sfcf027.tile5.nc .........OK
- Comparing sfcf027.tile6.nc .........OK
- Comparing sfcf048.tile1.nc .........OK
- Comparing sfcf048.tile2.nc .........OK
- Comparing sfcf048.tile3.nc .........OK
- Comparing sfcf048.tile4.nc .........OK
- Comparing sfcf048.tile5.nc .........OK
- Comparing sfcf048.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf024.tile1.nc .........OK
- Comparing atmf024.tile2.nc .........OK
- Comparing atmf024.tile3.nc .........OK
- Comparing atmf024.tile4.nc .........OK
- Comparing atmf024.tile5.nc .........OK
- Comparing atmf024.tile6.nc .........OK
- Comparing atmf027.tile1.nc .........OK
- Comparing atmf027.tile2.nc .........OK
- Comparing atmf027.tile3.nc .........OK
- Comparing atmf027.tile4.nc .........OK
- Comparing atmf027.tile5.nc .........OK
- Comparing atmf027.tile6.nc .........OK
- Comparing atmf048.tile1.nc .........OK
- Comparing atmf048.tile2.nc .........OK
- Comparing atmf048.tile3.nc .........OK
- Comparing atmf048.tile4.nc .........OK
- Comparing atmf048.tile5.nc .........OK
- Comparing atmf048.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_control
+Checking test 042 rap_control results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
  Comparing RESTART/coupler.res .........OK
  Comparing RESTART/fv_core.res.nc .........OK
  Comparing RESTART/fv_core.res.tile1.nc .........OK
@@ -1637,44 +1681,26 @@ Checking test 043 fv3_gsd results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 252.889570
+[0] The total amount of wall time                        = 399.105446
 
-Test 043 fv3_gsd PASS
+Test 042 rap_control PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_rrfs_v1alpha
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_rrfs_v1alpha
-Checking test 044 fv3_rrfs_v1alpha results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf024.tile1.nc .........OK
- Comparing sfcf024.tile2.nc .........OK
- Comparing sfcf024.tile3.nc .........OK
- Comparing sfcf024.tile4.nc .........OK
- Comparing sfcf024.tile5.nc .........OK
- Comparing sfcf024.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf024.tile1.nc .........OK
- Comparing atmf024.tile2.nc .........OK
- Comparing atmf024.tile3.nc .........OK
- Comparing atmf024.tile4.nc .........OK
- Comparing atmf024.tile5.nc .........OK
- Comparing atmf024.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_2threads
+Checking test 043 rap_2threads results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
  Comparing RESTART/coupler.res .........OK
  Comparing RESTART/fv_core.res.nc .........OK
  Comparing RESTART/fv_core.res.tile1.nc .........OK
@@ -1708,44 +1734,26 @@ Checking test 044 fv3_rrfs_v1alpha results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 102.416989
+[0] The total amount of wall time                        = 374.013209
 
-Test 044 fv3_rrfs_v1alpha PASS
+Test 043 rap_2threads PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_rap
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_rap
-Checking test 045 fv3_rap results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf024.tile1.nc .........OK
- Comparing sfcf024.tile2.nc .........OK
- Comparing sfcf024.tile3.nc .........OK
- Comparing sfcf024.tile4.nc .........OK
- Comparing sfcf024.tile5.nc .........OK
- Comparing sfcf024.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf024.tile1.nc .........OK
- Comparing atmf024.tile2.nc .........OK
- Comparing atmf024.tile3.nc .........OK
- Comparing atmf024.tile4.nc .........OK
- Comparing atmf024.tile5.nc .........OK
- Comparing atmf024.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_sfcdiff
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_sfcdiff
+Checking test 044 rap_sfcdiff results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
  Comparing RESTART/coupler.res .........OK
  Comparing RESTART/fv_core.res.nc .........OK
  Comparing RESTART/fv_core.res.tile1.nc .........OK
@@ -1779,44 +1787,18 @@ Checking test 045 fv3_rap results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 101.971171
+[0] The total amount of wall time                        = 394.760148
 
-Test 045 fv3_rap PASS
+Test 044 rap_sfcdiff PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_hrrr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_hrrr
-Checking test 046 fv3_hrrr results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf024.tile1.nc .........OK
- Comparing sfcf024.tile2.nc .........OK
- Comparing sfcf024.tile3.nc .........OK
- Comparing sfcf024.tile4.nc .........OK
- Comparing sfcf024.tile5.nc .........OK
- Comparing sfcf024.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf024.tile1.nc .........OK
- Comparing atmf024.tile2.nc .........OK
- Comparing atmf024.tile3.nc .........OK
- Comparing atmf024.tile4.nc .........OK
- Comparing atmf024.tile5.nc .........OK
- Comparing atmf024.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_sfcdiff
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_sfcdiff_restart
+Checking test 045 rap_sfcdiff_restart results ....
+ Comparing sfcf024.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
  Comparing RESTART/coupler.res .........OK
  Comparing RESTART/fv_core.res.nc .........OK
  Comparing RESTART/fv_core.res.tile1.nc .........OK
@@ -1850,44 +1832,26 @@ Checking test 046 fv3_hrrr results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 100.649907
+[0] The total amount of wall time                        = 204.899774
 
-Test 046 fv3_hrrr PASS
+Test 045 rap_sfcdiff_restart PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_rrfs_v1beta
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_rrfs_v1beta
-Checking test 047 fv3_rrfs_v1beta results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf024.tile1.nc .........OK
- Comparing sfcf024.tile2.nc .........OK
- Comparing sfcf024.tile3.nc .........OK
- Comparing sfcf024.tile4.nc .........OK
- Comparing sfcf024.tile5.nc .........OK
- Comparing sfcf024.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf024.tile1.nc .........OK
- Comparing atmf024.tile2.nc .........OK
- Comparing atmf024.tile3.nc .........OK
- Comparing atmf024.tile4.nc .........OK
- Comparing atmf024.tile5.nc .........OK
- Comparing atmf024.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hrrr_control
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hrrr_control
+Checking test 046 hrrr_control results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
  Comparing RESTART/coupler.res .........OK
  Comparing RESTART/fv_core.res.nc .........OK
  Comparing RESTART/fv_core.res.tile1.nc .........OK
@@ -1921,13 +1885,66 @@ Checking test 047 fv3_rrfs_v1beta results ....
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 101.810046
+[0] The total amount of wall time                        = 384.797084
 
-Test 047 fv3_rrfs_v1beta PASS
+Test 046 hrrr_control PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_rrtmgp
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_rrtmgp
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rrfs_v1beta
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rrfs_v1beta
+Checking test 047 rrfs_v1beta results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
+ Comparing RESTART/coupler.res .........OK
+ Comparing RESTART/fv_core.res.nc .........OK
+ Comparing RESTART/fv_core.res.tile1.nc .........OK
+ Comparing RESTART/fv_core.res.tile2.nc .........OK
+ Comparing RESTART/fv_core.res.tile3.nc .........OK
+ Comparing RESTART/fv_core.res.tile4.nc .........OK
+ Comparing RESTART/fv_core.res.tile5.nc .........OK
+ Comparing RESTART/fv_core.res.tile6.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile1.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile2.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile3.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile4.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile5.nc .........OK
+ Comparing RESTART/fv_tracer.res.tile6.nc .........OK
+ Comparing RESTART/phy_data.tile1.nc .........OK
+ Comparing RESTART/phy_data.tile2.nc .........OK
+ Comparing RESTART/phy_data.tile3.nc .........OK
+ Comparing RESTART/phy_data.tile4.nc .........OK
+ Comparing RESTART/phy_data.tile5.nc .........OK
+ Comparing RESTART/phy_data.tile6.nc .........OK
+ Comparing RESTART/sfc_data.tile1.nc .........OK
+ Comparing RESTART/sfc_data.tile2.nc .........OK
+ Comparing RESTART/sfc_data.tile3.nc .........OK
+ Comparing RESTART/sfc_data.tile4.nc .........OK
+ Comparing RESTART/sfc_data.tile5.nc .........OK
+ Comparing RESTART/sfc_data.tile6.nc .........OK
+
+[0] The total amount of wall time                        = 388.743855
+
+Test 047 rrfs_v1beta PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_rrtmgp
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_rrtmgp
 Checking test 048 control_rrtmgp results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
@@ -1938,14 +1955,31 @@ Checking test 048 control_rrtmgp results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 232.709955
+[0] The total amount of wall time                        = 271.027200
 
 Test 048 control_rrtmgp PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_csawmg
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_csawmg
-Checking test 049 control_csawmg results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_rrtmgp_c192
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_rrtmgp_c192
+Checking test 049 control_rrtmgp_c192 results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf012.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf012.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF12 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF12 .........OK
+
+[0] The total amount of wall time                        = 700.382318
+
+Test 049 control_rrtmgp_c192 PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_csawmg
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_csawmg
+Checking test 050 control_csawmg results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1955,14 +1989,14 @@ Checking test 049 control_csawmg results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 301.384877
+[0] The total amount of wall time                        = 290.864944
 
-Test 049 control_csawmg PASS
+Test 050 control_csawmg PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_csawmgt
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_csawmgt
-Checking test 050 control_csawmgt results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_csawmgt
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_csawmgt
+Checking test 051 control_csawmgt results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1972,14 +2006,14 @@ Checking test 050 control_csawmgt results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 371.597224
+[0] The total amount of wall time                        = 366.944026
 
-Test 050 control_csawmgt PASS
+Test 051 control_csawmgt PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_flake
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_flake
-Checking test 051 control_flake results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_flake
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_flake
+Checking test 052 control_flake results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
  Comparing atmf000.nc .........OK
@@ -1989,30 +2023,13 @@ Checking test 051 control_flake results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 249.812151
+[0] The total amount of wall time                        = 241.532519
 
-Test 051 control_flake PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_ugwpv1
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_ugwpv1
-Checking test 052 control_ugwpv1 results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf024.nc .........OK
- Comparing atmf000.nc .........OK
- Comparing atmf024.nc .........OK
- Comparing GFSFLX.GrbF00 .........OK
- Comparing GFSFLX.GrbF24 .........OK
- Comparing GFSPRS.GrbF00 .........OK
- Comparing GFSPRS.GrbF24 .........OK
-
-[0] The total amount of wall time                        = 209.524087
-
-Test 052 control_ugwpv1 PASS
+Test 052 control_flake PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_ras
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_ras
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_ras
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_ras
 Checking test 053 control_ras results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
@@ -2023,13 +2040,13 @@ Checking test 053 control_ras results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 201.893507
+[0] The total amount of wall time                        = 191.713309
 
 Test 053 control_ras PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_thompson
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_thompson
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_thompson
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_thompson
 Checking test 054 control_thompson results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
@@ -2040,13 +2057,13 @@ Checking test 054 control_thompson results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 237.541800
+[0] The total amount of wall time                        = 240.973306
 
 Test 054 control_thompson PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_thompson_no_aero
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_thompson_no_aero
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_thompson_no_aero
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_thompson_no_aero
 Checking test 055 control_thompson_no_aero results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf024.nc .........OK
@@ -2057,31 +2074,14 @@ Checking test 055 control_thompson_no_aero results ....
  Comparing GFSPRS.GrbF00 .........OK
  Comparing GFSPRS.GrbF24 .........OK
 
-[0] The total amount of wall time                        = 228.892975
+[0] The total amount of wall time                        = 229.999095
 
 Test 055 control_thompson_no_aero PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_noahmp
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_noahmp
-Checking test 056 control_noahmp results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf024.nc .........OK
- Comparing atmf000.nc .........OK
- Comparing atmf024.nc .........OK
- Comparing GFSFLX.GrbF00 .........OK
- Comparing GFSFLX.GrbF24 .........OK
- Comparing GFSPRS.GrbF00 .........OK
- Comparing GFSPRS.GrbF24 .........OK
-
-[0] The total amount of wall time                        = 195.468805
-
-Test 056 control_noahmp PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/HAFS_v0_HWRF_thompson
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_HAFS_v0_hwrf_thompson
-Checking test 057 fv3_HAFS_v0_hwrf_thompson results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/HAFS_v0_HWRF_thompson
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/fv3_HAFS_v0_hwrf_thompson
+Checking test 056 fv3_HAFS_v0_hwrf_thompson results ....
  Comparing atmos_4xdaily.tile1.nc .........OK
  Comparing atmos_4xdaily.tile2.nc .........OK
  Comparing atmos_4xdaily.tile3.nc .........OK
@@ -2145,14 +2145,14 @@ Checking test 057 fv3_HAFS_v0_hwrf_thompson results ....
  Comparing RESTART/phy_data.tile5.nc .........OK
  Comparing RESTART/phy_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 171.334752
+[0] The total amount of wall time                        = 176.891410
 
-Test 057 fv3_HAFS_v0_hwrf_thompson PASS
+Test 056 fv3_HAFS_v0_hwrf_thompson PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/ESG_HAFS_v0_HWRF_thompson
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_esg_HAFS_v0_hwrf_thompson
-Checking test 058 fv3_esg_HAFS_v0_hwrf_thompson results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/ESG_HAFS_v0_HWRF_thompson
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/fv3_esg_HAFS_v0_hwrf_thompson
+Checking test 057 fv3_esg_HAFS_v0_hwrf_thompson results ....
  Comparing atmos_4xdaily.nc .........OK
  Comparing phyf000.nc .........OK
  Comparing phyf012.nc .........OK
@@ -2166,39 +2166,50 @@ Checking test 058 fv3_esg_HAFS_v0_hwrf_thompson results ....
  Comparing RESTART/sfc_data.nc .........OK
  Comparing RESTART/phy_data.nc .........OK
 
-[0] The total amount of wall time                        = 320.307819
+[0] The total amount of wall time                        = 325.889764
 
-Test 058 fv3_esg_HAFS_v0_hwrf_thompson PASS
+Test 057 fv3_esg_HAFS_v0_hwrf_thompson PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_debug
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_wam_repro
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_wam_repro
+Checking test 058 control_wam results ....
+ Comparing sfcf024.nc .........OK
+ Comparing atmf024.nc .........OK
+
+[0] The total amount of wall time                        = 127.027801
+
+Test 058 control_wam PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_debug
 Checking test 059 control_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 164.033743
+[0] The total amount of wall time                        = 167.794586
 
 Test 059 control_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_2threads_debug
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_2threads_debug
 Checking test 060 control_2threads_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 151.999942
+[0] The total amount of wall time                        = 155.446535
 
 Test 060 control_2threads_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_CubedSphereGrid_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_CubedSphereGrid_debug
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_CubedSphereGrid_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_CubedSphereGrid_debug
 Checking test 061 control_CubedSphereGrid_debug results ....
  Comparing sfcf000.tile1.nc .........OK
  Comparing sfcf000.tile2.nc .........OK
@@ -2225,495 +2236,339 @@ Checking test 061 control_CubedSphereGrid_debug results ....
  Comparing atmf001.tile5.nc .........OK
  Comparing atmf001.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 178.246928
+[0] The total amount of wall time                        = 182.928141
 
 Test 061 control_CubedSphereGrid_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_wrtGauss_netcdf_parallel_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_wrtGauss_netcdf_parallel_debug
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_wrtGauss_netcdf_parallel_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_wrtGauss_netcdf_parallel_debug
 Checking test 062 control_wrtGauss_netcdf_parallel_debug results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf001.nc ............ALT CHECK......OK
+ Comparing sfcf000.nc ............ALT CHECK......OK
+ Comparing sfcf001.nc .........OK
  Comparing atmf000.nc ............ALT CHECK......OK
  Comparing atmf001.nc ............ALT CHECK......OK
 
-[0] The total amount of wall time                        = 167.498230
+[0] The total amount of wall time                        = 171.298275
 
 Test 062 control_wrtGauss_netcdf_parallel_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_stochy_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_stochy_debug
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_stochy_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_stochy_debug
 Checking test 063 control_stochy_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 187.595890
+[0] The total amount of wall time                        = 191.995845
 
 Test 063 control_stochy_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_ca_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_ca_debug
-Checking test 064 control_ca_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_lndp_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_lndp_debug
+Checking test 064 control_lndp_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 165.832696
+[0] The total amount of wall time                        = 173.345692
 
-Test 064 control_ca_debug PASS
+Test 064 control_lndp_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_lndp_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_lndp_debug
-Checking test 065 control_lndp_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_rrtmgp_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_rrtmgp_debug
+Checking test 065 control_rrtmgp_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 168.276449
+[0] The total amount of wall time                        = 201.040148
 
-Test 065 control_lndp_debug PASS
+Test 065 control_rrtmgp_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_lheatstrg_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_lheatstrg_debug
-Checking test 066 control_lheatstrg_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_csawmg_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_csawmg_debug
+Checking test 066 control_csawmg_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 163.990156
+[0] The total amount of wall time                        = 228.820692
 
-Test 066 control_lheatstrg_debug PASS
+Test 066 control_csawmg_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_merra2_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_merra2_debug
-Checking test 067 control_merra2_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_csawmgt_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_csawmgt_debug
+Checking test 067 control_csawmgt_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 237.273055
+[0] The total amount of wall time                        = 265.218108
 
-Test 067 control_merra2_debug PASS
+Test 067 control_csawmgt_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_rrtmgp_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_rrtmgp_debug
-Checking test 068 control_rrtmgp_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_ras_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_ras_debug
+Checking test 068 control_ras_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 186.535129
+[0] The total amount of wall time                        = 175.261055
 
-Test 068 control_rrtmgp_debug PASS
+Test 068 control_ras_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_csawmg_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_csawmg_debug
-Checking test 069 control_csawmg_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_diag_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_diag_debug
+Checking test 069 control_diag_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 281.668067
+[0] The total amount of wall time                        = 177.584167
 
-Test 069 control_csawmg_debug PASS
+Test 069 control_diag_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_csawmgt_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_csawmgt_debug
-Checking test 070 control_csawmgt_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_debug_p7
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_debug_p7
+Checking test 070 control_debug_p7 results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 317.167996
+[0] The total amount of wall time                        = 183.920350
 
-Test 070 control_csawmgt_debug PASS
+Test 070 control_debug_p7 PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_ugwpv1_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_ugwpv1_debug
-Checking test 071 control_ugwpv1_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_thompson_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_thompson_debug
+Checking test 071 control_thompson_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 178.102031
+[0] The total amount of wall time                        = 197.254500
 
-Test 071 control_ugwpv1_debug PASS
+Test 071 control_thompson_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_ras_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_ras_debug
-Checking test 072 control_ras_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_thompson_no_aero_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_thompson_no_aero_debug
+Checking test 072 control_thompson_no_aero_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 170.559418
+[0] The total amount of wall time                        = 190.267878
 
-Test 072 control_ras_debug PASS
+Test 072 control_thompson_no_aero_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_noahmp_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_noahmp_debug
-Checking test 073 control_noahmp_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_thompson_debug_extdiag
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_thompson_extdiag_debug
+Checking test 073 control_thompson_extdiag_debug results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf001.nc .........OK
  Comparing atmf000.nc .........OK
  Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 164.245513
+[0] The total amount of wall time                        = 207.137054
 
-Test 073 control_noahmp_debug PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_diag_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_diag_debug
-Checking test 074 control_diag_debug results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf001.nc .........OK
- Comparing atmf000.nc .........OK
- Comparing atmf001.nc .........OK
-
-[0] The total amount of wall time                        = 174.624556
-
-Test 074 control_diag_debug PASS
+Test 073 control_thompson_extdiag_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_thompson_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_thompson_debug
-Checking test 075 control_thompson_debug results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf001.nc .........OK
- Comparing atmf000.nc .........OK
- Comparing atmf001.nc .........OK
-
-[0] The total amount of wall time                        = 192.208431
-
-Test 075 control_thompson_debug PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_thompson_no_aero_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_thompson_no_aero_debug
-Checking test 076 control_thompson_no_aero_debug results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf001.nc .........OK
- Comparing atmf000.nc .........OK
- Comparing atmf001.nc .........OK
-
-[0] The total amount of wall time                        = 186.041663
-
-Test 076 control_thompson_no_aero_debug PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_thompson_debug_extdiag
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_thompson_extdiag_debug
-Checking test 077 control_thompson_extdiag_debug results ....
- Comparing sfcf000.nc .........OK
- Comparing sfcf001.nc .........OK
- Comparing atmf000.nc .........OK
- Comparing atmf001.nc .........OK
-
-[0] The total amount of wall time                        = 202.298193
-
-Test 077 control_thompson_extdiag_debug PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_control_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_control_debug
-Checking test 078 regional_control_debug results ....
- Comparing atmos_4xdaily.nc .........OK
- Comparing fv3_history2d.nc .........OK
- Comparing fv3_history.nc .........OK
- Comparing RESTART/fv_core.res.tile1_new.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1_new.nc .........OK
-
-[0] The total amount of wall time                        = 275.923443
-
-Test 078 regional_control_debug PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_regional_quilt_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/regional_quilt_debug
-Checking test 079 regional_quilt_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/fv3_regional_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/regional_debug
+Checking test 074 regional_debug results ....
  Comparing dynf000.nc .........OK
  Comparing dynf001.nc .........OK
  Comparing phyf000.nc .........OK
  Comparing phyf001.nc .........OK
 
-[0] The total amount of wall time                        = 280.514547
+[0] The total amount of wall time                        = 283.216738
 
-Test 079 regional_quilt_debug PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_gsd_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_gsd_debug
-Checking test 080 fv3_gsd_debug results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf003.tile1.nc .........OK
- Comparing sfcf003.tile2.nc .........OK
- Comparing sfcf003.tile3.nc .........OK
- Comparing sfcf003.tile4.nc .........OK
- Comparing sfcf003.tile5.nc .........OK
- Comparing sfcf003.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf003.tile1.nc .........OK
- Comparing atmf003.tile2.nc .........OK
- Comparing atmf003.tile3.nc .........OK
- Comparing atmf003.tile4.nc .........OK
- Comparing atmf003.tile5.nc .........OK
- Comparing atmf003.tile6.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
-
-[0] The total amount of wall time                        = 281.112710
-
-Test 080 fv3_gsd_debug PASS
+Test 074 regional_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_gsd_diag_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_gsd_diag_debug
-Checking test 081 fv3_gsd_diag_debug results ....
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf001.tile1.nc .........OK
- Comparing sfcf001.tile2.nc .........OK
- Comparing sfcf001.tile3.nc .........OK
- Comparing sfcf001.tile4.nc .........OK
- Comparing sfcf001.tile5.nc .........OK
- Comparing sfcf001.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf001.tile1.nc .........OK
- Comparing atmf001.tile2.nc .........OK
- Comparing atmf001.tile3.nc .........OK
- Comparing atmf001.tile4.nc .........OK
- Comparing atmf001.tile5.nc .........OK
- Comparing atmf001.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_control_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_control_debug
+Checking test 075 rap_control_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 429.819710
+[0] The total amount of wall time                        = 305.466153
 
-Test 081 fv3_gsd_diag_debug PASS
+Test 075 rap_control_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_rrfs_v1beta_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_rrfs_v1beta_debug
-Checking test 082 fv3_rrfs_v1beta_debug results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf003.tile1.nc .........OK
- Comparing sfcf003.tile2.nc .........OK
- Comparing sfcf003.tile3.nc .........OK
- Comparing sfcf003.tile4.nc .........OK
- Comparing sfcf003.tile5.nc .........OK
- Comparing sfcf003.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf003.tile1.nc .........OK
- Comparing atmf003.tile2.nc .........OK
- Comparing atmf003.tile3.nc .........OK
- Comparing atmf003.tile4.nc .........OK
- Comparing atmf003.tile5.nc .........OK
- Comparing atmf003.tile6.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_control_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_unified_drag_suite_debug
+Checking test 076 rap_unified_drag_suite_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 221.529489
+[0] The total amount of wall time                        = 305.946219
 
-Test 082 fv3_rrfs_v1beta_debug PASS
+Test 076 rap_unified_drag_suite_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/fv3_rrfs_v1alpha_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_rrfs_v1alpha_debug
-Checking test 083 fv3_rrfs_v1alpha_debug results ....
- Comparing atmos_4xdaily.tile1.nc .........OK
- Comparing atmos_4xdaily.tile2.nc .........OK
- Comparing atmos_4xdaily.tile3.nc .........OK
- Comparing atmos_4xdaily.tile4.nc .........OK
- Comparing atmos_4xdaily.tile5.nc .........OK
- Comparing atmos_4xdaily.tile6.nc .........OK
- Comparing sfcf000.tile1.nc .........OK
- Comparing sfcf000.tile2.nc .........OK
- Comparing sfcf000.tile3.nc .........OK
- Comparing sfcf000.tile4.nc .........OK
- Comparing sfcf000.tile5.nc .........OK
- Comparing sfcf000.tile6.nc .........OK
- Comparing sfcf003.tile1.nc .........OK
- Comparing sfcf003.tile2.nc .........OK
- Comparing sfcf003.tile3.nc .........OK
- Comparing sfcf003.tile4.nc .........OK
- Comparing sfcf003.tile5.nc .........OK
- Comparing sfcf003.tile6.nc .........OK
- Comparing atmf000.tile1.nc .........OK
- Comparing atmf000.tile2.nc .........OK
- Comparing atmf000.tile3.nc .........OK
- Comparing atmf000.tile4.nc .........OK
- Comparing atmf000.tile5.nc .........OK
- Comparing atmf000.tile6.nc .........OK
- Comparing atmf003.tile1.nc .........OK
- Comparing atmf003.tile2.nc .........OK
- Comparing atmf003.tile3.nc .........OK
- Comparing atmf003.tile4.nc .........OK
- Comparing atmf003.tile5.nc .........OK
- Comparing atmf003.tile6.nc .........OK
- Comparing RESTART/coupler.res .........OK
- Comparing RESTART/fv_core.res.nc .........OK
- Comparing RESTART/fv_core.res.tile1.nc .........OK
- Comparing RESTART/fv_core.res.tile2.nc .........OK
- Comparing RESTART/fv_core.res.tile3.nc .........OK
- Comparing RESTART/fv_core.res.tile4.nc .........OK
- Comparing RESTART/fv_core.res.tile5.nc .........OK
- Comparing RESTART/fv_core.res.tile6.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile1.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile2.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile3.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile4.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile5.nc .........OK
- Comparing RESTART/fv_srf_wnd.res.tile6.nc .........OK
- Comparing RESTART/fv_tracer.res.tile1.nc .........OK
- Comparing RESTART/fv_tracer.res.tile2.nc .........OK
- Comparing RESTART/fv_tracer.res.tile3.nc .........OK
- Comparing RESTART/fv_tracer.res.tile4.nc .........OK
- Comparing RESTART/fv_tracer.res.tile5.nc .........OK
- Comparing RESTART/fv_tracer.res.tile6.nc .........OK
- Comparing RESTART/phy_data.tile1.nc .........OK
- Comparing RESTART/phy_data.tile2.nc .........OK
- Comparing RESTART/phy_data.tile3.nc .........OK
- Comparing RESTART/phy_data.tile4.nc .........OK
- Comparing RESTART/phy_data.tile5.nc .........OK
- Comparing RESTART/phy_data.tile6.nc .........OK
- Comparing RESTART/sfc_data.tile1.nc .........OK
- Comparing RESTART/sfc_data.tile2.nc .........OK
- Comparing RESTART/sfc_data.tile3.nc .........OK
- Comparing RESTART/sfc_data.tile4.nc .........OK
- Comparing RESTART/sfc_data.tile5.nc .........OK
- Comparing RESTART/sfc_data.tile6.nc .........OK
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_diag_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_diag_debug
+Checking test 077 rap_diag_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
 
-[0] The total amount of wall time                        = 222.158455
+[0] The total amount of wall time                        = 323.438454
 
-Test 083 fv3_rrfs_v1alpha_debug PASS
+Test 077 rap_diag_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/HAFS_v0_HWRF_thompson_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_HAFS_v0_hwrf_thompson_debug
-Checking test 084 fv3_HAFS_v0_hwrf_thompson_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_cires_ugwp_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_cires_ugwp_debug
+Checking test 078 rap_cires_ugwp_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 312.627321
+
+Test 078 rap_cires_ugwp_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_cires_ugwp_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_unified_ugwp_debug
+Checking test 079 rap_unified_ugwp_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 312.015840
+
+Test 079 rap_unified_ugwp_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_noah_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_noah_debug
+Checking test 080 rap_noah_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 302.667331
+
+Test 080 rap_noah_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_rrtmgp_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_rrtmgp_debug
+Checking test 081 rap_rrtmgp_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 534.776693
+
+Test 081 rap_rrtmgp_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_lndp_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_lndp_debug
+Checking test 082 rap_lndp_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 308.407751
+
+Test 082 rap_lndp_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_sfcdiff_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_sfcdiff_debug
+Checking test 083 rap_sfcdiff_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 305.988703
+
+Test 083 rap_sfcdiff_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_flake_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_flake_debug
+Checking test 084 rap_flake_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 306.093503
+
+Test 084 rap_flake_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rap_noah_sfcdiff_cires_ugwp_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rap_noah_sfcdiff_cires_ugwp_debug
+Checking test 085 rap_noah_sfcdiff_cires_ugwp_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 508.996269
+
+Test 085 rap_noah_sfcdiff_cires_ugwp_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/rrfs_v1beta_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/rrfs_v1beta_debug
+Checking test 086 rrfs_v1beta_debug results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf001.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf001.nc .........OK
+
+[0] The total amount of wall time                        = 305.012505
+
+Test 086 rrfs_v1beta_debug PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/HAFS_v0_HWRF_thompson_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/fv3_HAFS_v0_hwrf_thompson_debug
+Checking test 087 fv3_HAFS_v0_hwrf_thompson_debug results ....
  Comparing atmos_4xdaily.tile1.nc .........OK
  Comparing atmos_4xdaily.tile2.nc .........OK
  Comparing atmos_4xdaily.tile3.nc .........OK
@@ -2777,14 +2632,14 @@ Checking test 084 fv3_HAFS_v0_hwrf_thompson_debug results ....
  Comparing RESTART/phy_data.tile5.nc .........OK
  Comparing RESTART/phy_data.tile6.nc .........OK
 
-[0] The total amount of wall time                        = 233.939650
+[0] The total amount of wall time                        = 237.860283
 
-Test 084 fv3_HAFS_v0_hwrf_thompson_debug PASS
+Test 087 fv3_HAFS_v0_hwrf_thompson_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/ESG_HAFS_v0_HWRF_thompson_debug
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/fv3_esg_HAFS_v0_hwrf_thompson_debug
-Checking test 085 fv3_esg_HAFS_v0_hwrf_thompson_debug results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/ESG_HAFS_v0_HWRF_thompson_debug
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/fv3_esg_HAFS_v0_hwrf_thompson_debug
+Checking test 088 fv3_esg_HAFS_v0_hwrf_thompson_debug results ....
  Comparing atmos_4xdaily.nc .........OK
  Comparing phyf000.nc .........OK
  Comparing phyf001.nc .........OK
@@ -2798,263 +2653,223 @@ Checking test 085 fv3_esg_HAFS_v0_hwrf_thompson_debug results ....
  Comparing RESTART/sfc_data.nc .........OK
  Comparing RESTART/phy_data.nc .........OK
 
-[0] The total amount of wall time                        = 430.300887
+[0] The total amount of wall time                        = 437.177233
 
-Test 085 fv3_esg_HAFS_v0_hwrf_thompson_debug PASS
+Test 088 fv3_esg_HAFS_v0_hwrf_thompson_debug PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/hafs_regional_atm
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/hafs_regional_atm
-Checking test 086 hafs_regional_atm results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_atm
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_atm
+Checking test 089 hafs_regional_atm results ....
+ Comparing atmf006.nc .........OK
+ Comparing sfcf006.nc .........OK
+
+[0] The total amount of wall time                        = 603.578409
+
+Test 089 hafs_regional_atm PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_atm_ocn
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_atm_ocn
+Checking test 090 hafs_regional_atm_ocn results ....
+ Comparing atmf006.nc ............ALT CHECK......OK
+ Comparing sfcf006.nc ............ALT CHECK......OK
+ Comparing archv.2019_241_06.a .........OK
+ Comparing archs.2019_241_06.a .........OK
+ Comparing ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
+ Comparing ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
+
+[0] The total amount of wall time                        = 592.818012
+
+Test 090 hafs_regional_atm_ocn PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_atm_wav
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_atm_wav
+Checking test 091 hafs_regional_atm_wav results ....
+ Comparing atmf006.nc ............ALT CHECK......OK
+ Comparing sfcf006.nc .........OK
+ Comparing out_grd.ww3 .........OK
+ Comparing out_pnt.ww3 .........OK
+
+[0] The total amount of wall time                        = 975.261758
+
+Test 091 hafs_regional_atm_wav PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_atm_ocn_wav
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_atm_ocn_wav
+Checking test 092 hafs_regional_atm_ocn_wav results ....
+ Comparing atmf006.nc ............ALT CHECK......OK
+ Comparing sfcf006.nc ............ALT CHECK......OK
+ Comparing archv.2019_241_06.a .........OK
+ Comparing archs.2019_241_06.a .........OK
+ Comparing out_grd.ww3 .........OK
+ Comparing out_pnt.ww3 .........OK
+
+[0] The total amount of wall time                        = 1030.667242
+
+Test 092 hafs_regional_atm_ocn_wav PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_1nest_atm
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_1nest_atm
+Checking test 093 hafs_regional_1nest_atm results ....
+ Comparing atmf006.nc ............ALT CHECK......OK
+ Comparing sfcf006.nc .........OK
+
+[0] The total amount of wall time                        = 388.045733
+
+Test 093 hafs_regional_1nest_atm PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_telescopic_2nests_atm
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_telescopic_2nests_atm
+Checking test 094 hafs_regional_telescopic_2nests_atm results ....
  Comparing atmf006.nc ............ALT CHECK......OK
  Comparing sfcf006.nc ............ALT CHECK......OK
 
-[0] The total amount of wall time                        = 631.803742
+[0] The total amount of wall time                        = 669.482487
 
-Test 086 hafs_regional_atm PASS
+Test 094 hafs_regional_telescopic_2nests_atm PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/hafs_regional_atm_ocn
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/hafs_regional_atm_ocn
-Checking test 087 hafs_regional_atm_ocn results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_global_1nest_atm
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_global_1nest_atm
+Checking test 095 hafs_global_1nest_atm results ....
+ Comparing atmf006.nc ............ALT CHECK......OK
+ Comparing sfcf006.nc ............ALT CHECK......OK
+
+[0] The total amount of wall time                        = 648.607635
+
+Test 095 hafs_global_1nest_atm PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_global_multiple_4nests_atm
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_global_multiple_4nests_atm
+Checking test 096 hafs_global_multiple_4nests_atm results ....
  Comparing atmf006.nc .........OK
  Comparing sfcf006.nc ............ALT CHECK......OK
+
+[0] The total amount of wall time                        = 661.852907
+
+Test 096 hafs_global_multiple_4nests_atm PASS
+
+
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_docn
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_docn
+Checking test 097 hafs_regional_docn results ....
+ Comparing atmf006.nc ............ALT CHECK......OK
+ Comparing sfcf006.nc .........OK
  Comparing ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
  Comparing ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
+ Comparing ufs.hafs.docn.r.2019-08-29-21600.nc .........OK
 
-[0] The total amount of wall time                        = 624.865784
+[0] The total amount of wall time                        = 591.139137
 
-Test 087 hafs_regional_atm_ocn PASS
+Test 097 hafs_regional_docn PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/hafs_regional_docn
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/hafs_regional_docn
-Checking test 088 hafs_regional_docn results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_docn_oisst
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_docn_oisst
+Checking test 098 hafs_regional_docn_oisst results ....
  Comparing atmf006.nc ............ALT CHECK......OK
  Comparing sfcf006.nc ............ALT CHECK......OK
  Comparing ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
  Comparing ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
  Comparing ufs.hafs.docn.r.2019-08-29-21600.nc .........OK
 
-[0] The total amount of wall time                        = 621.708571
+[0] The total amount of wall time                        = 592.675790
 
-Test 088 hafs_regional_docn PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/hafs_regional_docn_oisst
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/hafs_regional_docn_oisst
-Checking test 089 hafs_regional_docn_oisst results ....
- Comparing atmf006.nc ............ALT CHECK......OK
- Comparing sfcf006.nc ............ALT CHECK......OK
- Comparing ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
- Comparing ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
- Comparing ufs.hafs.docn.r.2019-08-29-21600.nc .........OK
-
-[0] The total amount of wall time                        = 622.300369
-
-Test 089 hafs_regional_docn_oisst PASS
+Test 098 hafs_regional_docn_oisst PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/hafs_regional_datm_cdeps
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/hafs_regional_datm_cdeps
-Checking test 090 hafs_regional_datm_cdeps results ....
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/hafs_regional_datm_cdeps
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/hafs_regional_datm_cdeps
+Checking test 099 hafs_regional_datm_cdeps results ....
  Comparing ufs.hafs.cpl.hi.2019-08-30-00000.nc .........OK
  Comparing ufs.hafs.cpl.r.2019-08-30-00000.nc .........OK
  Comparing ufs.hafs.datm.r.2019-08-30-00000.nc .........OK
 
-[0] The total amount of wall time                        = 1084.754340
+[0] The total amount of wall time                        = 1087.559456
 
-Test 090 hafs_regional_datm_cdeps PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_control_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_control_cfsr
-Checking test 091 datm_control_cfsr results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2011-10-02-00000.nc .........OK
- Comparing RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
-
-[0] The total amount of wall time                        = 104.604822
-
-Test 091 datm_control_cfsr PASS
+Test 099 hafs_regional_datm_cdeps PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_control_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_restart_cfsr
-Checking test 092 datm_restart_cfsr results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2011-10-02-00000.nc .........OK
- Comparing RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
-
-[0] The total amount of wall time                        = 74.283423
-
-Test 092 datm_restart_cfsr PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_control_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_control_gefs
-Checking test 093 datm_control_gefs results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2011-10-02-00000.nc .........OK
- Comparing RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
-
-[0] The total amount of wall time                        = 97.624738
-
-Test 093 datm_control_gefs PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_control_iau_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_control_iau_gefs
-Checking test 094 datm_control_iau_gefs results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2011-10-02-00000.nc .........OK
- Comparing RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
-
-[0] The total amount of wall time                        = 99.291946
-
-Test 094 datm_control_iau_gefs PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_bulk_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_bulk_cfsr
-Checking test 095 datm_bulk_cfsr results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2011-10-02-00000.nc .........OK
- Comparing RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
-
-[0] The total amount of wall time                        = 101.806976
-
-Test 095 datm_bulk_cfsr PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_bulk_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_bulk_gefs
-Checking test 096 datm_bulk_gefs results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2011-10-02-00000.nc .........OK
- Comparing RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
-
-[0] The total amount of wall time                        = 97.271574
-
-Test 096 datm_bulk_gefs PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_mx025_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_mx025_cfsr
-Checking test 097 datm_mx025_cfsr results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/MOM.res_1.nc .........OK
- Comparing RESTART/MOM.res_2.nc .........OK
- Comparing RESTART/MOM.res_3.nc .........OK
- Comparing RESTART/iced.2011-10-01-43200.nc .........OK
- Comparing RESTART/DATM_CFSR.cpl.r.2011-10-01-43200.nc .........OK
-
-[0] The total amount of wall time                        = 349.529792
-
-Test 097 datm_mx025_cfsr PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_mx025_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_mx025_gefs
-Checking test 098 datm_mx025_gefs results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/MOM.res_1.nc .........OK
- Comparing RESTART/MOM.res_2.nc .........OK
- Comparing RESTART/MOM.res_3.nc .........OK
- Comparing RESTART/iced.2011-10-01-43200.nc .........OK
- Comparing RESTART/DATM_GEFS.cpl.r.2011-10-01-43200.nc .........OK
-
-[0] The total amount of wall time                        = 347.293769
-
-Test 098 datm_mx025_gefs PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_debug_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_debug_cfsr
-Checking test 099 datm_debug_cfsr results ....
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2011-10-01-21600.nc .........OK
- Comparing RESTART/DATM_CFSR.cpl.r.2011-10-01-21600.nc .........OK
-
-[0] The total amount of wall time                        = 293.788811
-
-Test 099 datm_debug_cfsr PASS
-
-
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_control_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_control_cfsr
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_control_cfsr
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_control_cfsr
 Checking test 100 datm_cdeps_control_cfsr results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/iced.2011-10-02-00000.nc .........OK
  Comparing RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
 
-[0] The total amount of wall time                        = 171.708499
+[0] The total amount of wall time                        = 169.285109
 
 Test 100 datm_cdeps_control_cfsr PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_control_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_restart_cfsr
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_control_cfsr
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_restart_cfsr
 Checking test 101 datm_cdeps_restart_cfsr results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/iced.2011-10-02-00000.nc .........OK
  Comparing RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
 
-[0] The total amount of wall time                        = 117.939234
+[0] The total amount of wall time                        = 117.606097
 
 Test 101 datm_cdeps_restart_cfsr PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_control_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_control_gefs
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_control_gefs
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_control_gefs
 Checking test 102 datm_cdeps_control_gefs results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/iced.2011-10-02-00000.nc .........OK
  Comparing RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
 
-[0] The total amount of wall time                        = 165.535357
+[0] The total amount of wall time                        = 164.076049
 
 Test 102 datm_cdeps_control_gefs PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_stochy_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_stochy_gefs
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_stochy_gefs
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_stochy_gefs
 Checking test 103 datm_cdeps_stochy_gefs results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/iced.2011-10-02-00000.nc .........OK
  Comparing RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
 
-[0] The total amount of wall time                        = 167.096752
+[0] The total amount of wall time                        = 165.372139
 
 Test 103 datm_cdeps_stochy_gefs PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_bulk_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_bulk_cfsr
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_bulk_cfsr
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_bulk_cfsr
 Checking test 104 datm_cdeps_bulk_cfsr results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/iced.2011-10-02-00000.nc .........OK
  Comparing RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
 
-[0] The total amount of wall time                        = 172.980186
+[0] The total amount of wall time                        = 171.368863
 
 Test 104 datm_cdeps_bulk_cfsr PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_bulk_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_bulk_gefs
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_bulk_gefs
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_bulk_gefs
 Checking test 105 datm_cdeps_bulk_gefs results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/iced.2011-10-02-00000.nc .........OK
  Comparing RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
 
-[0] The total amount of wall time                        = 165.617947
+[0] The total amount of wall time                        = 166.016057
 
 Test 105 datm_cdeps_bulk_gefs PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_mx025_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_mx025_cfsr
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_mx025_cfsr
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_mx025_cfsr
 Checking test 106 datm_cdeps_mx025_cfsr results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/MOM.res_1.nc .........OK
@@ -3063,13 +2878,13 @@ Checking test 106 datm_cdeps_mx025_cfsr results ....
  Comparing RESTART/iced.2011-10-01-43200.nc .........OK
  Comparing RESTART/DATM_CFSR.cpl.r.2011-10-01-43200.nc .........OK
 
-[0] The total amount of wall time                        = 335.271362
+[0] The total amount of wall time                        = 360.005712
 
 Test 106 datm_cdeps_mx025_cfsr PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_mx025_gefs
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_mx025_gefs
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_mx025_gefs
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_mx025_gefs
 Checking test 107 datm_cdeps_mx025_gefs results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/MOM.res_1.nc .........OK
@@ -3078,35 +2893,35 @@ Checking test 107 datm_cdeps_mx025_gefs results ....
  Comparing RESTART/iced.2011-10-01-43200.nc .........OK
  Comparing RESTART/DATM_GEFS.cpl.r.2011-10-01-43200.nc .........OK
 
-[0] The total amount of wall time                        = 331.796939
+[0] The total amount of wall time                        = 363.456793
 
 Test 107 datm_cdeps_mx025_gefs PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_control_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_multiple_files_cfsr
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_control_cfsr
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_multiple_files_cfsr
 Checking test 108 datm_cdeps_multiple_files_cfsr results ....
  Comparing RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
 
-[0] The total amount of wall time                        = 171.476766
+[0] The total amount of wall time                        = 171.576288
 
 Test 108 datm_cdeps_multiple_files_cfsr PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/datm_cdeps_debug_cfsr
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/datm_cdeps_debug_cfsr
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/datm_cdeps_debug_cfsr
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/datm_cdeps_debug_cfsr
 Checking test 109 datm_cdeps_debug_cfsr results ....
  Comparing RESTART/MOM.res.nc .........OK
  Comparing RESTART/iced.2011-10-01-21600.nc .........OK
  Comparing RESTART/DATM_CFSR.cpl.r.2011-10-01-21600.nc .........OK
 
-[0] The total amount of wall time                        = 489.785503
+[0] The total amount of wall time                        = 497.696872
 
 Test 109 datm_cdeps_debug_cfsr PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_atmwav
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_atmwav
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_atmwav
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_atmwav
 Checking test 110 control_atmwav results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf012.nc .........OK
@@ -3150,13 +2965,13 @@ Checking test 110 control_atmwav results ....
  Comparing RESTART/sfc_data.tile6.nc .........OK
  Comparing 20210322.180000.restart.glo_1deg .........OK
 
-[0] The total amount of wall time                        = 155.237816
+[0] The total amount of wall time                        = 94.006930
 
 Test 110 control_atmwav PASS
 
 
-baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20210929/control_c384gdas_wav
-working dir  = /gpfs/dell2/ptmp/Denise.Worthen/FV3_RT/rt_19723/control_c384gdas_wav
+baseline dir = /gpfs/dell2/emc/modeling/noscrub/emc.nemspara/RT/NEMSfv3gfs/develop-20211221/control_c384gdas_wav
+working dir  = /gpfs/dell2/ptmp/Jun.Wang/FV3_RT/rt_11973/control_c384gdas_wav
 Checking test 111 control_c384gdas_wav results ....
  Comparing sfcf000.nc .........OK
  Comparing sfcf003.nc .........OK
@@ -3202,11 +3017,11 @@ Checking test 111 control_c384gdas_wav results ....
  Comparing 20210322.030000.restart.gnh_10m .........OK
  Comparing 20210322.030000.restart.gsh_15m .........OK
 
-[0] The total amount of wall time                        = 1042.711843
+[0] The total amount of wall time                        = 608.763522
 
 Test 111 control_c384gdas_wav PASS
 
 
 REGRESSION TEST WAS SUCCESSFUL
-Thu Sep 30 10:59:31 UTC 2021
-Elapsed time: 01h:35m:03s. Have a nice day!
+Tue Dec 21 02:27:57 UTC 2021
+Elapsed time: 01h:49m:32s. Have a nice day!
