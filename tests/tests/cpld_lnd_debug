@@ -51,23 +51,27 @@ export LIST_FILES="sfcf006.tile1.nc \
                    RESTART/sfc_data.tile5.nc \
                    RESTART/sfc_data.tile6.nc \
                    RESTART/MOM.res.nc \
-                   RESTART/iced.2016-10-03-21600.nc \
-                   RESTART/ufs.cpld.cpl.r.2016-10-03-21600.nc"
+                   RESTART/iced.2021-03-22-43200.nc \
+                   RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc"
 
 export_fv3
 export_cpl
 export lnd_model='lnd_comp'
 
-export DAYS="0.25"
-export FHMAX="6"
+export DAYS=0.25
+export FHMAX=6
 export NFHOUT_HF="1"
 
 export RESTART_N=${FHMAX}
 export eps_imesh='2.5e-1'
 
+export CPLWAV=.false.
+export CPLWAV2ATM=.false.
+export MOM6_USE_WAVES=False
+
 export FV3_RUN=cpld_lnd_run.IN
 export NEMS_CONFIGURE="nems.configure.cpld_lnd.IN"
-export INPUT_NML=input.mom6_noah_ccpp.nml.IN
+export INPUT_NML=cpld_control_noah.nml.IN
 
 # # try to make job smaller for faster testing
 export TASKS=96

@@ -31,6 +31,7 @@ add_library(lnd_comp STATIC
 	    ccpphys_files/physcons.F90
 	    ccpphys_files/set_soilveg.f
 	    ccpphys_files/namelist_soilveg.f
+	    ccpphys_files/sflx.f
 	    )
 set_target_properties(lnd_comp PROPERTIES Fortran_MODULE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mod)
 target_compile_definitions(lnd_comp PUBLIC "${_lnd_comp_defs}")
