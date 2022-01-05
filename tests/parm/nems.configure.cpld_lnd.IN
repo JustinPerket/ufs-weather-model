@@ -1,6 +1,7 @@
 #############################################
 ####  NEMS Run-Time Configuration File  #####
 #############################################
+# based off nems.configure.cpld.IN
 
 # EARTH #
 EARTH_component_list: MED ATM LND OCN ICE

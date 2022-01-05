@@ -1,3 +1,5 @@
+# based from cpld_control_run.IN
+
 mkdir INPUT RESTART history MOM6_OUTPUT
 
 if [[ $ATMRES == C96 ]]; then
