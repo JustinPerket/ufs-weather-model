@@ -25,6 +25,9 @@ load(pathJoin("hpc-impi", hpc_impi_ver))
 
 load("ufs_common")
 
+-- Needed for LM4
+load("hdf5/1.10.5")
+
 setenv("CC", "mpiicc")
 setenv("CXX", "mpiicpc")
 setenv("FC", "mpiifort")
