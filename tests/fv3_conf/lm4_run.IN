@@ -5,12 +5,24 @@ if [[ $ATMRES == C96 ]]; then
 else
   FV3_DIR=FV3_input_data${ATMRES#C}
 fi
+
+## LM4
 # for now during development, use this path for inputdata
 INPUTDATA_LM4=/lustre/f2/pdata/gfdl/cmip6/datasets/CM4/common
 
 # out of the box, LM4 expects aXl referenced in grid_spec.nc for grid land area. Include them for now.
 if [[ $ATMRES == 'C96' ]]; then
-   ln -s $INPUTDATA_LM4/c96_grid/c96_OM4_025_grid_No_mg_drag_v20160808/C96_mosaic_tile?XC96_mosaic_tile?.nc ./
+  tar -xf $INPUTDATA_LM4/c96_grid/c96_OM4_025_grid_No_mg_drag_v20160808.tar -C ./INPUT/ \
+    --wildcards "C96_mosaic_tile?XC96_mosaic_tile?.nc"
+
+  tar -xvf $INPUTDATA_LM4/c96_LM4/c96_topo_rough_land.nc.tar -C ./INPUT/
+  
+elif [[ $ATMRES == 'C48' ]]; then
+  # these are not available at /lustre/f2/pdata/gfdl/cmip6/datasets/CM4/common, so generated here:
+  cp /lustre/f2/dev/gfdl/Justin.Perket/cpl_mosaic_gen/ufs_c48/C48_mosaic_tile?XC48_mosaic_tile?.nc ./INPUT
+
+  # needed to compute topo_rough
+  cp /lustre/f2/pdata/gfdl/fms/module_data/riga/navy_topography.data.nc INPUT/
 else
    echo 'Only setup for C96 for now during development'
 fi	
@@ -24,3 +36,6 @@ ln -s $INPUTDATA_LM4/common_LM4/landuse.nc                 ./INPUT/
 ln -s $INPUTDATA_LM4/common_LM4/soil_brdf.nc               ./INPUT/
 ln -s $INPUTDATA_LM4/common_LM4/soil_type_hwsd_5minute.nc  ./INPUT/soil_type.nc
 ##
+## if don't already have:
+rsync -arv @[INPUTDATA_ROOT]/FV3_input_data/INPUT/C96_grid.tile*.nc ./INPUT/
+rsync -arv @[INPUTDATA_ROOT]/FV3_input_data/INPUT/grid_spec.nc ./INPUT/C96_mosaic.nc
