@@ -16,6 +16,7 @@ export LIST_FILES="ufs.cpld.lnd.out.2000-01-02-00000.tile1.nc \
 export_datm_cdeps
 
 # these are not in export_datm_cdeps, but needed with LM4
+export LNDRES=C96
 export INPES=$INPES_cpl_dflt
 export JNPES=$JNPES_cpl_dflt
 export THRD=$THRD_cpl_dflt
