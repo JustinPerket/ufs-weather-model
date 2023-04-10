@@ -14,6 +14,7 @@ export LIST_FILES="ufs.cpld.lnd.out.2000-01-02-00000.tile1.nc \
                    ufs.cpld.lnd.out.2000-01-02-00000.tile6.nc"
 
 export_datm_cdeps
+export LNDRES=C48
 
 export SYEAR=2000
 export SMONTH=01
