@@ -37,5 +37,6 @@ ln -s $INPUTDATA_LM4/common_LM4/soil_brdf.nc               ./INPUT/
 ln -s $INPUTDATA_LM4/common_LM4/soil_type_hwsd_5minute.nc  ./INPUT/soil_type.nc
 ##
 ## if don't already have:
-rsync -arv @[INPUTDATA_ROOT]/FV3_input_data/INPUT/C96_grid.tile*.nc ./INPUT/
-rsync -arv @[INPUTDATA_ROOT]/FV3_input_data/INPUT/grid_spec.nc ./INPUT/C96_mosaic.nc
+rsync -arv @[INPUTDATA_ROOT]/CPL_FIX/a@[ATMRES]o@[OCNRES]/grid_spec.nc ./INPUT
+rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/@[ATMRES]_grid*.nc ./INPUT
+rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/grid_spec.nc ./INPUT/@[ATMRES]_mosaic.nc
