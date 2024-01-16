@@ -57,7 +57,6 @@
 /     
 
 &glac_data_nml
-       input_cover_types = 99
        use_lm2_awc = .true.,
        rsa_exp_global = 10.,
        f_iso_cold = 0.92, 0.58
@@ -186,7 +185,7 @@
 /
 
 &river_nml
-       do_rivers   = .FALSE.
+       do_rivers   = .TRUE.
        dt_slow     = 86400.
        land_area_called_cellarea = .true.
        all_big_outlet_ctn0 = .true.

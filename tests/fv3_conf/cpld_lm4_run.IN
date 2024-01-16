@@ -54,6 +54,9 @@ if [[ $ATMRES == 'C96' || $LNDRES == 'C96' ]]; then
 
   tar -xvf @[INPUTDATA_LM4]/c96_LM4/c96_topo_rough_land.nc.tar -C ./INPUT/
   
+  tar -xf @[INPUTDATA_LM4]/c96_LM4/c96_OM4_025_hydrography_v20170413.tar -C ./INPUT/ \
+      --wildcards "river_data.tile?.nc"
+  
 elif [[ $ATMRES == 'C48' || $LNDRES == 'C48' ]]; then
   # Currently only on Gaea.
   # these are not available at /lustre/f2/pdata/gfdl/cmip6/datasets/CM4/common, so generated here:
@@ -61,6 +64,9 @@ elif [[ $ATMRES == 'C48' || $LNDRES == 'C48' ]]; then
 
   # needed to compute topo_rough
   cp /lustre/f2/pdata/gfdl/fms/module_data/riga/navy_topography.data.nc INPUT/
+
+  # TODO: set up river data for c48
+  
 else	 
   echo 'Only setup for C48 or C96 for now during development'
 fi	
