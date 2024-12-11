@@ -163,11 +163,19 @@ export USE_CICE_ALB=.false.
 
 export WRITE_NSFLIP=.true.
 
-export FV3_RUN="control_run.IN noahmp_run.IN"
+# export FV3_RUN="control_run.IN noahmp_run.IN"
+export FV3_RUN="control_run.IN lm4_run.IN"
+
 export CCPP_SUITE=FV3_GFS_v17_p8
 export FIELD_TABLE=field_table_thompson_noaero_tke
+export FIELD_TABLE_ADDITIONAL=field_table_lm4
+
 export DIAG_TABLE=diag_table_cpld.IN
-export INPUT_NML=global_control.nml.IN
+# export DIAG_TABLE="diag_table_datm_lm4"
+
+# export INPUT_NML=global_control.nml.IN
+export INPUT_NML="input_atm_lm4.nml.IN"
+
 export V2_SFC_FILE=true
 
 # RRTMGP
@@ -214,7 +222,3 @@ else
 fi
 export MOM6_TOPOEDITS=""
 
-export FV3_RUN="lm4_run.IN"
-export DIAG_TABLE="diag_table_datm_lm4"
-export FIELD_TABLE_ADDITIONAL=field_table_lm4
-export INPUT_NML="input_datm_lm4.nml.IN"
