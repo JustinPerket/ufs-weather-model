@@ -1,5 +1,5 @@
 ## For LM4 with data atmosphere. This requires also using lm4_common.IN
-
+############################################################################
 
 mkdir -p INPUT RESTART 
 
@@ -28,3 +28,4 @@ rsync -arv @[INPUTDATA_ROOT]/MOM6_FIX/@[OCNRES]/* ./INPUT
 cd INPUT
 rsync -arv @[INPUTDATA_ROOT]/DATM_GSWP3_input_data/. .
 cd -
+
