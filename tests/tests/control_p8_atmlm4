@@ -164,7 +164,7 @@ export USE_CICE_ALB=.false.
 export WRITE_NSFLIP=.true.
 
 # export FV3_RUN="control_run.IN noahmp_run.IN"
-export FV3_RUN="control_run.IN lm4_run.IN"
+export FV3_RUN="control_run.IN lm4_common.IN lm4_atm.IN"
 
 export CCPP_SUITE=FV3_GFS_v17_p8
 export FIELD_TABLE=field_table_thompson_noaero_tke
