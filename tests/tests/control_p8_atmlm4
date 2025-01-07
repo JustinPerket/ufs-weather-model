@@ -222,3 +222,6 @@ else
 fi
 export MOM6_TOPOEDITS=""
 
+# needed to get grid spec files
+export OCNRES=100
+
