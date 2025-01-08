@@ -9,21 +9,6 @@ if [[ $atm_model != 'datm' ]]; then
     exit 1
 fi
 
-# need to make some adjustments for LM4's grid file requirements
-# assume LNDRES is defined
-
-if [[ $LNDRES == 'C96' ]]; then
-FV3_DIR=FV3_input_data
-else
-FV3_DIR=FV3_input_data${LNDRES#C}
-fi
-
-## get these if don't already have:
-rsync -arv @[INPUTDATA_ROOT]/CPL_FIX/a@[LNDRES]o@[OCNRES]/grid_spec.nc ./INPUT
-rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/@[LNDRES]_grid*.nc ./INPUT
-rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/grid_spec.nc ./INPUT/@[LNDRES]_mosaic.nc
-rsync -arv @[INPUTDATA_ROOT]/MOM6_FIX/@[OCNRES]/* ./INPUT
-
 # forcing data
 cd INPUT
 rsync -arv @[INPUTDATA_ROOT]/DATM_GSWP3_input_data/. .
