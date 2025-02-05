@@ -1,0 +1,19 @@
+## For LM4 with active atmopshere. This requires also using lm4_common.IN
+############################################################################
+
+mkdir -p INPUT RESTART 
+
+
+if [[ $atm_model != 'fv3' ]]; then
+    echo "Error: atm_model is not 'fv3'"
+fi
+
+# assume ATMRES is defined
+if [[ $ATMRES == 'C96' ]]; then
+    FV3_DIR=FV3_input_data
+else
+    FV3_DIR=FV3_input_data${ATMRES#C}
+fi
+
+
+
