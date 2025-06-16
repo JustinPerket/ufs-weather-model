@@ -77,8 +77,9 @@ export INPUT_NML="input_atm_lm4.nml.IN"
 
 
 export CPLLND=.true.
+export CPLLM4=.true.
 export CPLLND2ATM=.true.
-export CPLFLX=.true.  # TODO: this enables more variables than needed. Make new lm4 coupling flag?
+export CPLFLX=.false.  
 
 export UFS_CONFIGURE=ufs.configure.atm_lnd.IN
 export UFS_CONFIGURE="ufs.configure.atm_lm4.IN"
