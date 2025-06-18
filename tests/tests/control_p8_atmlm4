@@ -81,8 +81,7 @@ export CPLLM4=.true.
 export CPLLND2ATM=.true.
 export CPLFLX=.false.  
 
-export UFS_CONFIGURE=ufs.configure.atm_lnd.IN
-export UFS_CONFIGURE="ufs.configure.atm_lm4.IN"
+export UFS_CONFIGURE=ufs.configure.atm_lm4.IN
 
 export med_model=cmeps
 export atm_model=fv3
