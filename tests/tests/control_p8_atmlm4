@@ -105,6 +105,7 @@ export snow_albedo_option=1
 export precip_partition_option=4
 export initial_albedo=0.2
 export OUTPUT_FH="1 -1"
+export FV3_END_FMS_DIAG=.false.
 
 if [[ "$ATMRES" = "$LNDRES" ]]; then
   export lnd_input_dir="INPUT/"

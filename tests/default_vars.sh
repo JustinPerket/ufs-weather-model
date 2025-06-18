@@ -534,6 +534,7 @@ export JNPES=${JNPES_dflt}
 export RESTART_INTERVAL=0
 export QUILTING=.true.
 export QUILTING_RESTART=.true.
+export FV3_END_FMS_DIAG=.true
 export WRITE_GROUP=1
 export WRTTASK_PER_GROUP=6
 export ITASKS=1
