@@ -1,7 +1,7 @@
 [submodule "FV3"]
   path = FV3
   url = https://github.com/JustinPerket/fv3atm
-  branch = develop
+  branch = cpld_LM4
 [submodule "WW3"]
   path = WW3
   url = https://github.com/NOAA-EMC/WW3
@@ -49,7 +49,7 @@
 [submodule "LM4-driver"]
   path = LM4-driver
   url = https://github.com/JustinPerket/LM4-NUOPC-driver
-  branch = cpld_LM4
+  branch = tmp/flux_up
 [submodule "fire_behavior"]
   path = fire_behavior
   url = https://github.com/NOAA-EMC/fire_behavior
