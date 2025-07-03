@@ -257,6 +257,7 @@
   cplwav2atm   = @[CPLWAV2ATM]
   cpllnd       = @[CPLLND]
   cpllnd2atm   = @[CPLLND2ATM]
+  cpllm4       = @[CPLLM4]
   do_ca        = @[DO_CA]
   ca_global    = @[CA_GLOBAL]
   ca_sgs       = @[CA_SGS]
@@ -480,6 +481,7 @@
        blocksize = -1
 	dt_lnd_slow = 3600
 	restart_interval = 0,0,0,6,0,0
+       cpl2atm = @[CPLLM4]
 /
 
 &cana_nml                                                                                                                                         
@@ -587,7 +589,7 @@
 /
 
 &land_model_nml
-       ! layout = $lnd_layout
+       layout = @[INPES],@[JNPES]
        ! io_layout = $lnd_io_layout
        tau_snow_T_adj = 604800.
        prohibit_negative_canopy_water=.false.
