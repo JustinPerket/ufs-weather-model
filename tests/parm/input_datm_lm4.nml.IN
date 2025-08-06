@@ -157,7 +157,7 @@ ISEED_EPBL=201601010023,
        K_z_background  = 15.e-5
 /
 
- &land_conservation_nml                                                                                                                            
+&land_conservation_nml                                                                                                                            
        do_check_conservation=.true.                                                                                                                
        water_cons_tol  = 1e-8                                                                                                                      
        carbon_cons_tol = 1e-6                                                                                                                      
@@ -203,7 +203,8 @@ ISEED_EPBL=201601010023,
 /
 
 &river_nml
-       do_rivers   = .FALSE.
+       do_rivers   = .true.
+       stop_on_mask_mismatch = .false.       
        dt_slow     = 86400.
        land_area_called_cellarea = .true.
        all_big_outlet_ctn0 = .true.
