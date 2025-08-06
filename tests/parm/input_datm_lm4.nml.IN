@@ -73,7 +73,6 @@ ISEED_EPBL=201601010023,
 /     
 
 &glac_data_nml
-       input_cover_types = 99
        use_lm2_awc = .true.,
        rsa_exp_global = 10.,
        f_iso_cold = 0.92, 0.58
@@ -175,6 +174,8 @@ ISEED_EPBL=201601010023,
        prohibit_negative_canopy_water=.false.
        min_frac = 1e-8
        npes_io_group = 18
+       con_fac_small = 0.0
+       con_fac_large = 1.0e2       
 /
 
 &landuse_nml
