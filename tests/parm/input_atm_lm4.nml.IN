@@ -499,7 +499,6 @@
 /     
 
 &glac_data_nml
-       input_cover_types = 99
        use_lm2_awc = .true.,
        rsa_exp_global = 10.,
        f_iso_cold = 0.92, 0.58
@@ -584,7 +583,7 @@
        K_z_background  = 15.e-5
 /
 
- &land_conservation_nml                                                                                                                            
+&land_conservation_nml                                                                                                                            
        do_check_conservation=.true.                                                                                                                
        water_cons_tol  = 1e-8                                                                                                                      
        carbon_cons_tol = 1e-6                                                                                                                      
@@ -601,6 +600,8 @@
        prohibit_negative_canopy_water=.false.
        min_frac = 1e-8
        npes_io_group = 18
+       con_fac_small = 0.0
+       con_fac_large = 1.0e2       
 /
 
 &landuse_nml
@@ -628,7 +629,8 @@
 /
 
 &river_nml
-       do_rivers   = .FALSE.
+       do_rivers   = .true.
+       stop_on_mask_mismatch = .false. 
        dt_slow     = 86400.
        land_area_called_cellarea = .true.
        all_big_outlet_ctn0 = .true.
