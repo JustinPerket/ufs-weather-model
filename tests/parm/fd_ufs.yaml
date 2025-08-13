@@ -1229,6 +1229,7 @@ field_dictionary:
       description: land export
     #
     - standard_name: Sl_t
+      alias: "inst_temp_lnd"
       canonical_units: K
       description: land export
     #
