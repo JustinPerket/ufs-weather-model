@@ -2,6 +2,26 @@
 
 mkdir -p INPUT RESTART 
 
+
+if [[ $DATM_CDEPS == false ]] ; then 
+  # assume ATMRES is defined
+  if [[ $ATMRES == 'C96' ]]; then
+      FV3_DIR=FV3_input_data
+  else
+      FV3_DIR=FV3_input_data${ATMRES#C}
+  fi
+else 
+  # assume LNDRES is defined
+
+  if [[ $LNDRES == 'C96' ]]; then
+  FV3_DIR=FV3_input_data
+  else
+  FV3_DIR=FV3_input_data${LNDRES#C}
+  fi
+fi
+
+
+
 # LM4
 
 # out of the box, LM4 expects aXl referenced in grid_spec.nc for grid land area. Include them for now.
@@ -52,22 +72,18 @@ if [ $WARM_START = .true. ]; then
   cp ../${DEP_RUN}${SUFFIX}/RESTART/${RFILE1} RESTART/.  
   ls -1 "RESTART/${RFILE1}">rpointer.cpl
 
-  # CDEPS restart and pointer files
-  RFILE2=ufs.cpld.datm.r.${RESTART_FILE_SUFFIX_SECS}.nc
-  cp ../${DEP_RUN}${SUFFIX}/${RFILE2} RESTART/.
-  ls -1 "RESTART/${RFILE2}">rpointer.atm
+  if [[ $DATM_CDEPS == true ]] ; then
+    # CDEPS restart and pointer files
+    RFILE2=ufs.cpld.datm.r.${RESTART_FILE_SUFFIX_SECS}.nc
+    cp ../${DEP_RUN}${SUFFIX}/${RFILE2} RESTART/.
+    ls -1 "RESTART/${RFILE2}">rpointer.atm
+  fi
 fi
 
 
 
 # need to make some adjustments for LM4's grid file requirements
-# assume LNDRES is defined
 
-if [[ $LNDRES == 'C96' ]]; then
-FV3_DIR=FV3_input_data
-else
-FV3_DIR=FV3_input_data${LNDRES#C}
-fi
 
 ## get these if don't already have:
 rsync -arv @[INPUTDATA_ROOT]/CPL_FIX/a@[LNDRES]o@[OCNRES]/grid_spec.nc ./INPUT
