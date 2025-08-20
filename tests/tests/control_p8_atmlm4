@@ -63,7 +63,7 @@ export LIST_FILES="\
 
 
 # export FV3_RUN="control_run.IN noahmp_run.IN"
-export FV3_RUN="control_run.IN lm4_common.IN lm4_atm.IN"
+export FV3_RUN="control_run.IN lm4_common.IN"
 
 #export CCPP_SUITE=FV3_GFS_v17_p8
 #export FIELD_TABLE=field_table_thompson_noaero_tke
