@@ -1,6 +1,6 @@
-[submodule "FV3"]
-  path = FV3
-  url = https://github.com/JustinPerket/fv3atm
+[submodule "UFSATM"]
+  path = UFSATM
+  url = https://github.com/JustinPerket/ufsatm
   branch = cpld_LM4
 [submodule "WW3"]
   path = WW3
