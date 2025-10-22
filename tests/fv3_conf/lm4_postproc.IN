@@ -1,0 +1,29 @@
+# Post-processing LM4 restart files
+######################################################
+
+echo "HERE! 1"
+CURRDIR=`pwd`
+echo "HERE! 2"
+echo "ORIG DIR = ../${DEP_RUN}${RT_SUFFIX}/RESTART/"
+cd ../${DEP_RUN}${RT_SUFFIX}/RESTART/ 
+echo "HERE! 3"
+# need fre nctools for restart files
+#module load fre/bronx-23
+echo "HERE! 4"
+mkdir -p LM4_FOR_NEXT.${LM4_RESTART_PREFIX}
+echo "HERE! 5"
+echo "pwd=`pwd`"
+
+for LM4_RESTART_TYPE in cana glac lake land snow soil vegn1 vegn2 river; do
+    cp ${LM4_RESTART_PREFIX}.${LM4_RESTART_TYPE}.res.tile*.nc* LM4_FOR_NEXT.${LM4_RESTART_PREFIX}/.
+done
+
+cd LM4_FOR_NEXT.${LM4_RESTART_PREFIX}
+# remove datestamp
+rename ${LM4_RESTART_PREFIX}. "" *.res.tile*.nc*
+combine_restarts
+rm *.res.tile*.nc.????
+
+cd $CURRDIR
+mkdir -p INPUT
+cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/LM4_FOR_NEXT.${LM4_RESTART_PREFIX}/* ./INPUT/
