@@ -23,7 +23,7 @@ export HAFS=true
 export FHMAX=6
 export RESTART_N=${FHMAX}
 export DT_ATMOS=180
-export IDEFLATE=1
+export ZSTANDARD_LEVEL=5
 export OUTPUT_FH='3 -1'
 export OUTPUT_FILE="'netcdf' 'netcdf'"
 export SDAY=29
@@ -104,5 +104,5 @@ export UFS_CONFIGURE=ufs.configure.hafs_atm_wav.IN
 export FV3_RUN="hafs_fv3_run.IN hafs_ww3_run.IN"
 
 if [[ ${MACHINE_ID} = ursa ]]; then
-   WLCLK=40
+   WLCLK=50
 fi
