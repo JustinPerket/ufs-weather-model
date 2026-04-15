@@ -154,11 +154,8 @@ export FNMSKH="'global_slmask.t62.192.94.grb'"
 export CDMBGWD=0.0,0.0,0.0,0.0
 export DT_INNER=${DT_ATMOS}
 
-export CPLCHM=.false.
-
 export eps_imesh=1.0e0
 
-export DIAG_TABLE=diag_table_template
 export FIELD_TABLE=field_table_gfsv16
 export UFS_CONFIGURE=ufs.configure.s2sw.IN
 

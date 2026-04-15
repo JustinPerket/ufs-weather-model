@@ -75,7 +75,6 @@ export_fv3
 export_ugwpv1
 export_cpl
 
-export CPLCHM=.false.
 export DNATS=0
 
 export RESTART_N=3
@@ -95,6 +94,8 @@ WAV_tasks=$WAV_tasks_cpl_unstr
 
 export atm_omp_num_threads=$THRD_cpl_unstr
 export med_omp_num_threads=$atm_omp_num_threads
+
+export USE_FV3_ROUTEHANDLES=.true.
 
 export MOM6_TOPOEDITS=ufs.topo_edits_011818.nc
 export MOM6_ALLOW_LANDMASK_CHANGES=True
@@ -128,3 +129,8 @@ export DO_GSL_DRAG_SS=.false.
 
 # for nccmp of cice history files
 export nccmp_exclude_attr="--globalex=date_created"
+
+# GNU-Release is slow on Ursa; fill out the node
+if [[ $MACHINE_ID = ursa ]] && [[ $RT_COMPILER = gnu ]]; then
+   WAV_tasks="$(($WAV_tasks_cpl_unstr + 100))"
+fi

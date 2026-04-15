@@ -62,7 +62,7 @@ THERMO_SPANS_COUPLING = @[MOM6_THERMO_SPAN]    !   [Boolean] default = False
                                 ! longer than the coupling timestep. The actual thermodynamic timestep that is
                                 ! used in this case is the largest integer multiple of the coupling timestep
                                 ! that is less than or equal to DT_THERM.
-HFREEZE = 20.0                  !   [m] default = -1.0
+HFREEZE = @[MOM6_HFREEZE]       !   [m] default = -1.0
                                 ! If HFREEZE > 0, melt potential will be computed. The actual depth
                                 ! over which melt potential is computed will be min(HFREEZE, OBLD)
                                 ! where OBLD is the boundary layer depth. If HFREEZE <= 0 (default)
@@ -104,7 +104,7 @@ DEFAULT_ANSWER_DATE = 20250818  ! default = 99991231
                                 ! This sets the default value for the various _ANSWER_DATE parameters.
 WAVE_INTERFACE_ANSWER_DATE = 20230101
 
-WRITE_GEOM = 2                  ! default = 1
+WRITE_GEOM = @[MOM6_WRITE_GEOM] ! default = 1
                                 ! If =0, never write the geometry and vertical grid files. If =1, write the
                                 ! geometry and vertical grid files only for a new simulation. If =2, always
                                 ! write the geometry and vertical grid files. Other values are invalid.
@@ -425,7 +425,7 @@ VELOCITY_CONFIG = @[MOM6_INIT_UV]     ! default = "zero"
                                 !     rossby_front - a mixed layer front in thermal wind balance.
                                 !     soliton - Equatorial Rossby soliton.
                                 !     USER - call a user modified routine.
-VELOCITY_FILE = @[MOM6_WARMSTART_FILE] 
+VELOCITY_FILE = @[MOM6_WARMSTART_FILE]
                                 ! The name of the velocity initial condition file.
 U_IC_VAR = "u"                  ! default = "u"
                                 ! The initial condition variable for zonal velocity in VELOCITY_FILE.
@@ -966,7 +966,7 @@ WIND_STAGGER = "A"              ! default = "C"
                                 ! values are 'A', 'B', or 'C'.
 CD_TIDES = 0.0018               !   [nondim] default = 1.0E-04
                                 ! The drag coefficient that applies to the tides.
-GUST_CONST = 0.0                !   [Pa] default = 0.02
+GUST_CONST = @[MOM6_GUST_CONST] !   [Pa] default = 0.02
                                 ! The background gustiness in the winds.
 USE_RIGID_SEA_ICE = True        !   [Boolean] default = False
                                 ! If true, sea-ice is rigid enough to exert a nonhydrostatic pressure that
@@ -986,4 +986,4 @@ PERT_EPBL = @[PERT_EPBL]        ! [Boolean] default = False
 RESTART_CHECKSUMS_REQUIRED = False
 ! === module MOM_file_parser ===
 
-USE_HUYNH_STENCIL_BUG = True   
+USE_HUYNH_STENCIL_BUG = True

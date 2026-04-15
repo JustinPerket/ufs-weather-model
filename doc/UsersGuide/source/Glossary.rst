@@ -22,7 +22,7 @@ Glossary
       The `Air Quality Model <https://github.com/NOAA-EMC/AQM>`_ (AQM) is a UFS Application that dynamically couples the Community Multiscale Air Quality (:term:`CMAQ`) model with the UFS Weather Model through the :term:`NUOPC` Layer to simulate temporal and spatial variations of atmospheric compositions (e.g., ozone and aerosol compositions). The CMAQ, treated as a column chemistry model, updates concentrations of chemical species (e.g., ozone and aerosol compositions) at each integration time step. The transport terms (e.g., :term:`advection` and diffusion) of all chemical species are handled by the UFS Weather Model as :term:`tracers<tracer>`.
 
    CCPP
-      The `Common Community Physics Package <https://dtcenter.org/community-code/common-community-physics-package-ccpp>`_ is a forecast-model agnostic, vetted collection of code containing atmospheric physical parameterizations and suites of parameterizations for use in Numerical Weather Prediction (:term:`NWP`) along with a framework that connects the physics to the host forecast model.
+      The `Common Community Physics Package <https://dtcenter.org/software-tools/common-community-physics-package-ccpp>`_ is a forecast-model agnostic, vetted collection of code containing atmospheric physical parameterizations and suites of parameterizations for use in Numerical Weather Prediction (:term:`NWP`) along with a framework that connects the physics to the host forecast model.
 
    CCPP-Framework
      The infrastructure that connects physics schemes with a host model; also refers to a software
@@ -36,7 +36,10 @@ Glossary
 
    CESM
       The `Community Earth System Model <https://www.cesm.ucar.edu/>`_ (CESM) is a fully-coupled global climate model developed at the National Center for Atmospheric Research (:term:`NCAR`) in collaboration with colleagues in the research community. 
-
+   
+   CFSR
+      The `Climate Forecast System Reanlysis <https://climatedataguide.ucar.edu/climate-data/climate-forecast-system-reanalysis-cfsr>`_ (CFSR) is a third generation reanalysis product. 
+   
    chgres_cube
       The preprocessing software used to create initial and boundary condition files to "coldstart" the forecast model. It is part of :term:`UFS_UTILS`. 
 
@@ -72,7 +75,7 @@ Glossary
       DICE is the *Data Sea-Ice* component of :term:`CDEPS`. It uses static sea-ice forcing data (e.g., derived from observations) instead of output from an active sea-ice model (e.g., :term:`CICE6`). This reduces the complexity and computational cost associated with coupling to an active sea-ice model. The *Data Sea-Ice* component is particularly useful when employing computationally intensive Data Assimilation (DA) techniques to update atmospheric fields in a coupled model. In general, use of DICE in place of :term:`CICE6` can be appropriate when users are running a coupled model and only want certain components of the model to be active. More information about DICE is available in the `CDEPS DICE Documentation <https://escomp.github.io/CDEPS/versions/master/html/dice.html>`_.
 
    DOCN
-      DOCN is the *Data Ocean* component of :term:`CDEPS`. It uses static ocean forcing files (derived from observations or previous ocean model runs) instead of output from an active ocean model. This reduces the complexity and computational cost associated with coupling to an active ocean model. The *Data Ocean* component is particularly useful when employing computationally intensive Data Assimilation (DA) techniques to update atmospheric fields in a coupled model. In general, use of DOCN in place of :term:`MOM6` or :term:`HYCOM` can be appropriate when users are running a coupled model and only want certain components of the model to be active. More information about DOCN is available in the `CDEPS DOCN Documentation <https://escomp.github.io/CDEPS/versions/master/html/docn.html>`_.
+      DOCN is the *Data Ocean* component of :term:`CDEPS`. It uses static ocean forcing files (derived from observations or previous ocean model runs) instead of output from an active ocean model. This reduces the complexity and computational cost associated with coupling to an active ocean model. The *Data Ocean* component is particularly useful when employing computationally intensive Data Assimilation (DA) techniques to update atmospheric fields in a coupled model. In general, use of DOCN in place of :term:`MOM6` can be appropriate when users are running a coupled model and only want certain components of the model to be active. More information about DOCN is available in the `CDEPS DOCN Documentation <https://escomp.github.io/CDEPS/versions/master/html/docn.html>`_.
    
    dycore
    dynamical core
@@ -108,11 +111,11 @@ Glossary
    HPSS
       High Performance Storage System (HPSS).
 
-   HYCOM
-      The HYbrid Coordinate Ocean Model (`HYCOM <https://www.hycom.org/>`_) was developed to address known shortcomings in the vertical coordinate scheme of the Miami Isopycnic-Coordinate Ocean Model (MICOM). HYCOM is a primitive equation, general circulation model with vertical coordinates that remain isopycnic in the open, stratified ocean. However, the isopycnal vertical coordinates smoothly transition to z-coordinates in the weakly stratified upper-ocean mixed layer, to terrain-following sigma coordinates in shallow water regions, and back to z-level coordinates in very shallow water. The latter transition prevents layers from becoming too thin where the water is very shallow. See the `HYCOM User's Guide <https://www.hycom.org/attachments/063_hycom_users_guide.pdf>`_ for more information on using the model. The `HYCOM model code <https://github.com/NOAA-EMC/HYCOM-src>`_ is publicly available on GitHub. 
-   
    ICs
       Initial conditions
+   
+   IMS
+      The `Interactive Multisensor Snow and Ice Mapping System <https://usicecenter.gov/Products/ImsHome>`_.
 
    LM4
       NUOPC NOAA-GFDL Land Model version 4
@@ -131,6 +134,9 @@ Glossary
 
    NCAR
       The `National Center for Atmospheric Research <https://ncar.ucar.edu/>`_. 
+   
+   NCEI
+      The `National Center for Environmental Information <https://www.ncei.noaa.gov/>`_.
 
    NCEP
       National Centers for Environmental Prediction (NCEP) is a branch of the :term:`National Weather Service <NWS>` and consists of nine centers, including the :term:`Environmental Modeling Center <EMC>`. More information can be found at https://www.weather.gov/ncep/.
@@ -152,7 +158,10 @@ Glossary
 
    NG-GODAS
       Next Generation-Global Ocean Data Assimilation System. NG-GODAS is a UFS Weather Model configuration that couples ocean (:term:`MOM6`), sea ice (:term:`CICE6`), and Data Assimilation (DA) capabilities with the :term:`DATM` component of :term:`CDEPS`.
-
+   
+   NIC
+      U.S. `National Ice Center <https://usicecenter.gov/>`_.
+   
    NOAHMP
    Noah-MP
       The Noah Multi-Physics (Noah-MP) land surface model (LSM) is an open-source, community-developed LSM that has been incorporated into the UFS Weather Model (WM). It is a UFS WM land component. 

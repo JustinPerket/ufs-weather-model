@@ -274,6 +274,13 @@ EOF
                [[ ${COMPILE_NUM_REMARKS}  -gt 0 ]] && COMPILE_WARNINGS+=" ${COMPILE_NUM_REMARKS} remarks"
                COMPILE_WARNINGS+=" )"
             fi
+          elif [[ ${COMPILER} == "gnu" ]]; then
+            COMPILE_NUM_WARNINGS=$(grep -c "^Warning: " "${RUNDIR_ROOT}/compile_${COMPILE_ID}/err" || true)
+            if [[ ${COMPILE_NUM_WARNINGS} -gt 0 ]]; then
+               COMPILE_WARNINGS+=" ("
+               [[ ${COMPILE_NUM_WARNINGS} -gt 0 ]] && COMPILE_WARNINGS+=" ${COMPILE_NUM_WARNINGS} warnings"
+               COMPILE_WARNINGS+=" )"
+            fi
           fi
           TIME_FILE="${LOG_DIR}/compile_${COMPILE_ID}_timestamp.txt"
           if [[ -f "${TIME_FILE}" ]]; then
@@ -842,7 +849,7 @@ case ${MACHINE_ID} in
     COMPILE_QUEUE="batch"
     PARTITION="orion"
     dprefix=${dprefix:-"/work/noaa/stmp/${USER}"}
-    DISKNM="/work/noaa/epic/UFS-WM_RT"
+    DISKNM="/work2/noaa/epic/UFS-WM_RT"
     STMP="${dprefix}/stmp"
     PTMP="${dprefix}/stmp"
 
@@ -870,7 +877,7 @@ case ${MACHINE_ID} in
     COMPILE_QUEUE="batch"
     PARTITION="hercules"
     dprefix=${dprefix:-"/work2/noaa/stmp/${USER}"}
-    DISKNM="/work/noaa/epic/hercules/UFS-WM_RT"
+    DISKNM="/work2/noaa/epic/hercules/UFS-WM_RT"
     STMP="${dprefix}/stmp"
     PTMP="${dprefix}/stmp"
 
@@ -878,78 +885,16 @@ case ${MACHINE_ID} in
     cp fv3_conf/fv3_slurm.IN_hercules fv3_conf/fv3_slurm.IN
     cp fv3_conf/compile_slurm.IN_hercules fv3_conf/compile_slurm.IN
     ;;
-  jet)
-    echo "rt.sh: Setting up jet..."
-    CurJetOS=$(lsb_release -is)
-    echo "=======Running on ${CurJetOS}======="
-    if [[ ${CurJetOS} == "CentOS" ]]; then
-    echo "=======Please, move to Rocky8 node fe[5-8]======="
-    exit 1
-    fi
-
-    if [[ "${ROCOTO:-false}" == true ]] ; then
-      module load rocoto
-      ROCOTO_SCHEDULER="slurm"
-    fi
-
-    if [[ "${ECFLOW:-false}" == true ]] ; then
-      module load ecflow/5.11.4
-    fi
-    module use /contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/modulefiles/Core
-    module load stack-intel/2021.5.0
-    module load stack-python/3.10.13
-
-    QUEUE="batch"
-    COMPILE_QUEUE="batch"
-    PARTITION="xjet"
-    DISKNM="/lfs5/HFIP/hfv3gfs/role.epic/RT"
-    dprefix="${dprefix:-/lfs5/HFIP/${ACCNR}/${USER}}"
-    STMP="${STMP:-${dprefix}/RT_BASELINE}"
-    PTMP="${PTMP:-${dprefix}/RT_RUNDIRS}"
-
-    SCHEDULER="slurm"
-    ;;
-  s4)
-    echo "rt.sh: Setting up s4..."
-    if [[ "${ROCOTO:-false}" == true ]] ; then
-      module load rocoto/1.3.2
-      ROCOTO_SCHEDULER=slurm
-    fi
-    if [[ "${ECFLOW:-false}" == true ]] ; then
-      module load ecflow/5.6.0
-    fi
-    module load miniconda/3.8-s4
-
-    module use /data/prod/jedi/spack-stack/modulefiles
-    if [[ "${ECFLOW:-false}" == true ]] ; then
-      module load ecflow/5.8.4
-      ECF_HOST=$(hostname)
-      ECF_PORT="$(( $(id -u) + 1500 ))"
-      export ECF_PORT ECF_HOST
-    fi
-
-    QUEUE="s4"
-    COMPILE_QUEUE="s4"
-
-    PARTITION="s4"
-    dprefix=${dprefix:-"/data/prod"}
-    DISKNM="${dprefix}/emc.nemspara/RT"
-    STMP="/scratch/short/users"
-    PTMP="/scratch/users"
-
-    SCHEDULER="slurm"
-    ;;
   derecho)
     echo "rt.sh: Setting up derecho..."
     if [[ "${ROCOTO:-false}" == true ]] ; then
       module use /glade/work/epicufsrt/contrib/derecho/modulefiles
-      module load rocoto/1.3.7-fix
-    fi
-    module use /glade/work/epicufsrt/contrib/spack-stack/derecho/modulefiles
-    if [[ "${ECFLOW:-false}" == true ]] ; then
-      module load ecflow/5.8.4
+      module load rocoto/1.3.7
     fi
     if [[ "${ECFLOW:-false}" == true ]] ; then
+      module use /glade/work/epicufsrt/contrib/spack-stack/derecho/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/modulefiles/oneapi/2024.2.1
+      module load stack-python/3.11.7
+      module load ecflow/5.11.4
       ECF_HOST=$(hostname)
       ECF_PORT=$(( $(id -u) + 1500 ))
       export ECF_PORT ECF_HOST
@@ -989,24 +934,6 @@ case ${MACHINE_ID} in
     STMP="${dprefix}/stmp4"
     PTMP="${dprefix}/stmp2"
     SCHEDULER="slurm"
-    ;;
-  frontera)
-    echo "rt.sh: Setting up frontera..."
-    set -x
-    export PYTHONPATH=
-    if [[ "${ECFLOW:-false}" == true ]] ; then
-      ECFLOW_START=
-    fi
-    QUEUE=development
-    COMPILE_QUEUE=development
-    PARTITION=
-    dprefix="${SCRATCH}/frontera"
-    DISKNM="/work2/01118/tg803972/frontera/RT"
-    STMP=${dprefix}
-    PTMP=${dprefix}
-    SCHEDULER=slurm
-    export MPIEXEC="ibrun"
-    export MPIEXECOPTS=
     ;;
   *)
     die "Unknown machine ID, please edit detect_machine.sh file"
@@ -1057,9 +984,10 @@ if [[ "${CREATE_BASELINE}" == false ]] ; then
   fi
 fi
 
-INPUTDATA_ROOT=${INPUTDATA_ROOT:-${DISKNM}/NEMSfv3gfs/input-data-20250507}
+INPUTDATA_ROOT=${INPUTDATA_ROOT:-${DISKNM}/NEMSfv3gfs/input-data-20251015}
 INPUTDATA_ROOT_WW3=${INPUTDATA_ROOT}/WW3_input_data_20250807
 INPUTDATA_LM4=${INPUTDATA_LM4:-${INPUTDATA_ROOT}/LM4_input_data}
+INPUTDATA_GFSv17opn=${INPUTDATA_GFSv17opn:-${DISKNM}/NEMSfv3gfs/GFSv17opn_20251014}
 
 shift $((OPTIND-1))
 if [[ $# -gt 1 ]]; then
@@ -1160,13 +1088,6 @@ if [[ ${ECFLOW} == true ]]; then
   MAX_BUILDS=10 #Max build jobs
   MAX_JOBS=30   #Max test/run jobs
   ECF_TRIES=2   #Tries before failure
-
-  # Reduce maximum number of compile jobs on jet and s4 because of licensing issues
-  if [[ ${MACHINE_ID} = jet ]]; then
-    MAX_BUILDS=5
-  elif [[ ${MACHINE_ID} = s4 ]]; then
-    MAX_BUILDS=1
-  fi
 
   ECFLOW_RUN=${PATHRT}/ecflow_run
   ECFLOW_SUITE=regtest_$$
@@ -1301,7 +1222,8 @@ while read -r line || [[ -n "${line}" ]]; do
 EOF
     fi
 
-    (
+    ( 
+      # shellcheck source=/github/workspace/tests/tests/control_c48
       source "${PATHRT}/tests/${TEST_NAME}"
 
       if [[ ${ESMF_THREADING} == true ]]; then
@@ -1329,6 +1251,7 @@ export RTPWD=${RTPWD}
 export INPUTDATA_ROOT=${INPUTDATA_ROOT}
 export INPUTDATA_ROOT_WW3=${INPUTDATA_ROOT_WW3}
 export INPUTDATA_LM4=${INPUTDATA_LM4}
+export INPUTDATA_GFSv17opn=${INPUTDATA_GFSv17opn}
 export PATHRT=${PATHRT}
 export PATHTR=${PATHTR}
 export NEW_BASELINE=${NEW_BASELINE}
@@ -1349,12 +1272,6 @@ export RTVERBOSE=${RTVERBOSE}
 export delete_rundir=${delete_rundir}
 export WLCLK=${WLCLK}
 EOF
-      if [[ ${MACHINE_ID} = jet ]]; then
-        cat << EOF >> "${RUNDIR_ROOT}/run_test_${TEST_ID}.env"
-export PATH=/contrib/spack-stack/miniconda3/23.11.0/envs/ufs-weather-model/bin:/contrib/spack-stack/miniconda3/23.11.0/bin:${PATH}
-export PYTHONPATH=/contrib/spack-stack/miniconda3/23.11.0/envs/ufs-weather-model/lib/python3.8/site-packages:/contrib/spack-stack/miniconda3/23.11.0/lib/python3.8/site-packages
-EOF
-      fi
 
       if [[ ${ROCOTO} == true ]]; then
         rocoto_create_run_task
