@@ -1,7 +1,7 @@
 ## For LM4 with data atmosphere. This requires also using lm4_common.IN
 ############################################################################
 
-mkdir -p INPUT RESTART 
+mkdir -p INPUT $CMEPS_RESTART_DIR 
 
 
 if [[ $atm_model != 'datm' ]]; then

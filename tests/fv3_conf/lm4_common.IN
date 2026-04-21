@@ -1,6 +1,6 @@
 ## Put common FV3_RUN setup for LM4 here, shared between coupled and datm configurations.
 
-mkdir -p INPUT RESTART 
+mkdir -p INPUT $CMEPS_RESTART_DIR 
 
 
 if [[ $DATM_CDEPS == false ]] ; then 
@@ -60,22 +60,22 @@ if [ $WARM_START = .true. ]; then
   # LM4 restart files
   # expected checkpoint restarts are named like: YYYYMMDD.HHMMSS.*.res.tile?.nc
 
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.landuse.res        ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.cana.res.tile*.nc  ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.glac.res.tile*.nc  ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.lake.res.tile*.nc  ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.land.res.tile*.nc  ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.snow.res.tile*.nc  ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.soil.res.tile*.nc  ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.vegn1.res.tile*.nc ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/RESTART/${LM4_RESTART_PREFIX}.vegn2.res.tile*.nc ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.landuse.res        ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.cana.res.tile*.nc  ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.glac.res.tile*.nc  ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.lake.res.tile*.nc  ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.land.res.tile*.nc  ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.snow.res.tile*.nc  ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.soil.res.tile*.nc  ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.vegn1.res.tile*.nc ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.vegn2.res.tile*.nc ./INPUT/
 
   # remove datestamp
   rename ${LM4_RESTART_PREFIX}. "" INPUT/${LM4_RESTART_PREFIX}.*.res*
 
   # CMEPS restart and pointer files
   RFILE1=ufs.cpld.cpl.r.${RESTART_FILE_SUFFIX_SECS}.nc
-  cp ../${DEP_RUN}${SUFFIX}/RESTART/${RFILE1} RESTART/.  
+  cp ../${DEP_RUN}${SUFFIX}/${CMEPS_RESTART_DIR}/${RFILE1} RESTART/.  
   ls -1 "RESTART/${RFILE1}">rpointer.cpl
 
   if [[ $DATM_CDEPS == true ]] ; then

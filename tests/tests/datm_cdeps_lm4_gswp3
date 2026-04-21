@@ -62,8 +62,6 @@ export_datm_cdeps
 
 # these are not in export_datm_cdeps, but needed with LM4
 export LNDRES=C96
-#export INPES=$INPES_cpl_dflt
-#export JNPES=$JNPES_cpl_dflt
 export INPES=2
 export JNPES=2
 export THRD=$THRD_cpl_dflt
@@ -111,7 +109,7 @@ export lnd_ic_type='custom'
 export CALC_SNET=.true.
 export layout_x=2
 export layout_y=2
-export mosaic_file="INPUT/C96_mosaic.nc"
+export mosaic_file="INPUT/${LNDRES}_mosaic.nc"
 export coupling_interval_sec=3600
 export TOPOEDITS=""
 export FV3_RUN="lm4_common.IN lm4_datm_cdeps_gswp.IN"
