@@ -29,8 +29,8 @@ write_fail_test() {
   fi
 }
 
-if [[ $# != 5 ]]; then
-  echo "Usage: $0 PATHRT RUNDIR_ROOT TEST_NAME TEST_ID COMPILE_ID"
+if [[ $# != 6 ]]; then
+  echo "Usage: $0 PATHRT RUNDIR_ROOT TEST_NAME TEST_ID COMPILE_ID RERUN_COMPARE_ONLY"
   exit 1
 fi
 
@@ -39,12 +39,21 @@ export RUNDIR_ROOT=$2
 export TEST_NAME=$3
 export TEST_ID=$4
 export COMPILE_ID=$5
+export RERUN_COMPARE_ONLY=${6:-NO}
 
 echo "PATHRT: ${PATHRT}"
 echo "RUNDIR_ROOT: ${RUNDIR_ROOT}"
 echo "TEST_NAME: ${TEST_NAME}"
 echo "TEST_ID: ${TEST_ID}"
 echo "COMPILE_ID: ${COMPILE_ID}"
+echo "RERUN_COMPARE_ONLY: ${RERUN_COMPARE_ONLY}"
+
+# JP, add option to skip running the test and just check results, for assuming rerunning a test
+if [[ ${RERUN_COMPARE_ONLY} == "YES" ]]; then
+  SCHEDULER='skip_run'
+  echo "Skipping running test ${TEST_ID} and just checking results"
+fi
+# end JP
 
 cd "${PATHRT}"
 
@@ -82,28 +91,33 @@ echo "Test ${TEST_ID} ${TEST_DESCR}"
 source rt_utils.sh
 source atparse.bash
 
-rm -rf "${RUNDIR}"
-mkdir -p "${RUNDIR}"
-cd "${RUNDIR}"
+if [[ ${RERUN_COMPARE_ONLY} != "YES" ]]; then
+  rm -rf "${RUNDIR}"
+  mkdir -p "${RUNDIR}"
+  cd "${RUNDIR}"
+fi
 
 ###############################################################################
 # Make configure and run files
 ###############################################################################
 
-# FV3 executable:
-cp "${PATHRT}/fv3_${COMPILE_ID}.exe" "fv3.exe"
+if [[ ${RERUN_COMPARE_ONLY} != "YES" ]]; then
 
-# modulefile for FV3 prerequisites:
-mkdir -p modulefiles
-if [[ ${MACHINE_ID} == linux ]]; then
-  cp "${PATHRT}/modules.fv3_${COMPILE_ID}" "./modulefiles/modules.fv3"
-else
-  cp "${PATHRT}/modules.fv3_${COMPILE_ID}.lua" "./modulefiles/modules.fv3.lua"
+  # FV3 executable:
+  cp "${PATHRT}/fv3_${COMPILE_ID}.exe" "fv3.exe"
+
+  # modulefile for FV3 prerequisites:
+  mkdir -p modulefiles
+  if [[ ${MACHINE_ID} == linux ]]; then
+    cp "${PATHRT}/modules.fv3_${COMPILE_ID}" "./modulefiles/modules.fv3"
+  else
+    cp "${PATHRT}/modules.fv3_${COMPILE_ID}.lua" "./modulefiles/modules.fv3.lua"
+  fi
+  cp "${PATHTR}/modulefiles/ufs_common.lua" "./modulefiles/."
+
+  # Get the shell file that loads the "module" command and purges modules:
+  cp "${PATHRT}/module-setup.sh" "module-setup.sh"
 fi
-cp "${PATHTR}/modulefiles/ufs_common.lua" "./modulefiles/."
-
-# Get the shell file that loads the "module" command and purges modules:
-cp "${PATHRT}/module-setup.sh" "module-setup.sh"
 
 case ${MACHINE_ID} in
   wcoss2|acorn)
@@ -449,6 +463,9 @@ fi
 ################################################################################
 # Submit test job
 ################################################################################
+
+
+
 export OMP_ENV=${OMP_ENV:-""}
 if [[ ${SCHEDULER} = 'none' ]]; then
   ulimit -s unlimited
@@ -457,6 +474,10 @@ if [[ ${SCHEDULER} = 'none' ]]; then
   else
     redirect_out_err mpiexec -n "${TASKS}" ./fv3.exe
   fi
+
+elif [[ ${SCHEDULER} = 'skip_run' ]]; then
+  echo "Skipping running test ${TEST_ID} and just checking results"
+  echo "Skipping running test ${TEST_ID} and just checking results" >> "${RT_LOG}"
 
 else
 
