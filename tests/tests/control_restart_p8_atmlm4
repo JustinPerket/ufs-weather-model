@@ -11,55 +11,67 @@ export TEST_DESCR="Active Atmosphere and GFDL Land Model 4, restart test"
 export CNTL_DIR=control_p8_atmlm4
 
 export LIST_FILES="\
-       RESTART/cana.res.tile1.nc \
-       RESTART/cana.res.tile2.nc \
-       RESTART/cana.res.tile3.nc \
-       RESTART/cana.res.tile4.nc \
-       RESTART/cana.res.tile5.nc \
-       RESTART/cana.res.tile6.nc \
-       RESTART/glac.res.tile1.nc \
-       RESTART/glac.res.tile2.nc \
-       RESTART/glac.res.tile3.nc \
-       RESTART/glac.res.tile4.nc \
-       RESTART/glac.res.tile5.nc \
-       RESTART/glac.res.tile6.nc \
-       RESTART/lake.res.tile1.nc \
-       RESTART/lake.res.tile2.nc \
-       RESTART/lake.res.tile3.nc \
-       RESTART/lake.res.tile4.nc \
-       RESTART/lake.res.tile5.nc \
-       RESTART/lake.res.tile6.nc \
-       RESTART/land.res.tile1.nc \
-       RESTART/land.res.tile2.nc \
-       RESTART/land.res.tile3.nc \
-       RESTART/land.res.tile4.nc \
-       RESTART/land.res.tile5.nc \
-       RESTART/land.res.tile6.nc \
-       RESTART/landuse.res	  \
-       RESTART/snow.res.tile1.nc \
-       RESTART/snow.res.tile2.nc \
-       RESTART/snow.res.tile3.nc \
-       RESTART/snow.res.tile4.nc \
-       RESTART/snow.res.tile5.nc \
-       RESTART/snow.res.tile6.nc \
-       RESTART/soil.res.tile1.nc \
-       RESTART/soil.res.tile2.nc \
-       RESTART/soil.res.tile3.nc \
-       RESTART/soil.res.tile4.nc \
-       RESTART/soil.res.tile5.nc \
-       RESTART/soil.res.tile6.nc \
-       RESTART/vegn1.res.tile1.nc\
-       RESTART/vegn1.res.tile2.nc\
-       RESTART/vegn1.res.tile3.nc\
-       RESTART/vegn1.res.tile4.nc\
-       RESTART/vegn1.res.tile5.nc\
-       RESTART/vegn1.res.tile6.nc\
-       RESTART/vegn2.res.tile1.nc\
-       RESTART/vegn2.res.tile2.nc\
-       RESTART/vegn2.res.tile3.nc\
-       RESTART/vegn2.res.tile4.nc\
-       RESTART/vegn2.res.tile5.nc\
-       RESTART/vegn2.res.tile6.nc" 
+      sfcf024.tile1.nc \
+      sfcf024.tile2.nc \
+      sfcf024.tile3.nc \
+      sfcf024.tile4.nc \
+      sfcf024.tile5.nc \
+      sfcf024.tile6.nc \
+      atmf024.tile1.nc \
+      atmf024.tile2.nc \
+      atmf024.tile3.nc \
+      atmf024.tile4.nc \
+      atmf024.tile5.nc \
+      atmf024.tile6.nc \
+      RESTART/cana.res.tile1.nc \
+      RESTART/cana.res.tile2.nc \
+      RESTART/cana.res.tile3.nc \
+      RESTART/cana.res.tile4.nc \
+      RESTART/cana.res.tile5.nc \
+      RESTART/cana.res.tile6.nc \
+      RESTART/glac.res.tile1.nc \
+      RESTART/glac.res.tile2.nc \
+      RESTART/glac.res.tile3.nc \
+      RESTART/glac.res.tile4.nc \
+      RESTART/glac.res.tile5.nc \
+      RESTART/glac.res.tile6.nc \
+      RESTART/lake.res.tile1.nc \
+      RESTART/lake.res.tile2.nc \
+      RESTART/lake.res.tile3.nc \
+      RESTART/lake.res.tile4.nc \
+      RESTART/lake.res.tile5.nc \
+      RESTART/lake.res.tile6.nc \
+      RESTART/land.res.tile1.nc \
+      RESTART/land.res.tile2.nc \
+      RESTART/land.res.tile3.nc \
+      RESTART/land.res.tile4.nc \
+      RESTART/land.res.tile5.nc \
+      RESTART/land.res.tile6.nc \
+      RESTART/landuse.res	  \
+      RESTART/snow.res.tile1.nc \
+      RESTART/snow.res.tile2.nc \
+      RESTART/snow.res.tile3.nc \
+      RESTART/snow.res.tile4.nc \
+      RESTART/snow.res.tile5.nc \
+      RESTART/snow.res.tile6.nc \
+      RESTART/soil.res.tile1.nc \
+      RESTART/soil.res.tile2.nc \
+      RESTART/soil.res.tile3.nc \
+      RESTART/soil.res.tile4.nc \
+      RESTART/soil.res.tile5.nc \
+      RESTART/soil.res.tile6.nc \
+      RESTART/vegn1.res.tile1.nc\
+      RESTART/vegn1.res.tile2.nc\
+      RESTART/vegn1.res.tile3.nc\
+      RESTART/vegn1.res.tile4.nc\
+      RESTART/vegn1.res.tile5.nc\
+      RESTART/vegn1.res.tile6.nc\
+      RESTART/vegn2.res.tile1.nc\
+      RESTART/vegn2.res.tile2.nc\
+      RESTART/vegn2.res.tile3.nc\
+      RESTART/vegn2.res.tile4.nc\
+      RESTART/vegn2.res.tile5.nc\
+      RESTART/vegn2.res.tile6.nc" 
 
 
 export RESTART_FILE_PREFIX="${SYEAR}${SMONTH}${SDAY}.$(printf "%02d" $(( ${FHROT} + ${SHOUR} )))0000"
