@@ -11,6 +11,18 @@ export TEST_DESCR="Active Atmosphere and GFDL Land Model 4"
 export CNTL_DIR=control_p8_atmlm4
 
 export LIST_FILES="\
+      sfcf048.tile1.nc \
+      sfcf048.tile2.nc \
+      sfcf048.tile3.nc \
+      sfcf048.tile4.nc \
+      sfcf048.tile5.nc \
+      sfcf048.tile6.nc \
+      atmf048.tile1.nc \
+      atmf048.tile2.nc \
+      atmf048.tile3.nc \
+      atmf048.tile4.nc \
+      atmf048.tile5.nc \
+      atmf048.tile6.nc \
        RESTART/cana.res.tile1.nc \
        RESTART/cana.res.tile2.nc \
        RESTART/cana.res.tile3.nc \
