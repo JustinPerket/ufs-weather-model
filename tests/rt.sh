@@ -775,7 +775,7 @@ case ${MACHINE_ID} in
     dprefix=${dprefix:-/gpfs/f6/${ACCNR}/proj-shared/${USER}}
     STMP=${STMP:-${dprefix}/RT_BASELINE}
     PTMP=${PTMP:-${dprefix}/RT_RUNDIRS}
-
+    JP_INPUTDATA_ROOT=/gpfs/f6/gfdl_b/scratch/Justin.Perket/grid_specs/created_mosaic/input-data-20251015
     SCHEDULER="slurm"
     ;;
   hera)
@@ -825,6 +825,7 @@ case ${MACHINE_ID} in
     DISKNM="/scratch4/NAGAPE/epic/role-epic/UFS-WM_RT"
     STMP="${STMP:-${dprefix}/RT_BASELINE}"
     PTMP="${PTMP:-${dprefix}/RT_RUNDIRS}"
+    JP_INPUTDATA_ROOT=/scratch4/GFDL/gfdlscr/Justin.Perket/created_mosaic/input-data-20251015
 
     SCHEDULER=slurm
 
@@ -1249,6 +1250,7 @@ export MACHINE_ID=${MACHINE_ID}
 export RT_COMPILER=${RT_COMPILER}
 export RTPWD=${RTPWD}
 export INPUTDATA_ROOT=${INPUTDATA_ROOT}
+export JP_INPUTDATA_ROOT=${JP_INPUTDATA_ROOT}
 export INPUTDATA_ROOT_WW3=${INPUTDATA_ROOT_WW3}
 export INPUTDATA_LM4=${INPUTDATA_LM4}
 export INPUTDATA_GFSv17opn=${INPUTDATA_GFSv17opn}

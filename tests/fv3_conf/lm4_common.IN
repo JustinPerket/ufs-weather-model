@@ -92,9 +92,11 @@ fi
 
 
 ## get these if don't already have:
-rsync -arv @[INPUTDATA_ROOT]/CPL_FIX/a@[LNDRES]o@[OCNRES]/grid_spec.nc ./INPUT
-rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/@[LNDRES]_grid*.nc ./INPUT
-rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/grid_spec.nc ./INPUT/@[LNDRES]_mosaic.nc
-rsync -arv @[INPUTDATA_ROOT]/MOM6_FIX/@[OCNRES]/* ./INPUT
+# rsync -arv @[INPUTDATA_ROOT]/CPL_FIX/a@[LNDRES]o@[OCNRES]/grid_spec.nc ./INPUT
+# rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/@[LNDRES]_grid*.nc ./INPUT
+# rsync -arv @[INPUTDATA_ROOT]/${FV3_DIR}/INPUT/grid_spec.nc ./INPUT/@[LNDRES]_mosaic.nc
+# rsync -arv @[INPUTDATA_ROOT]/MOM6_FIX/@[OCNRES]/* ./INPUT
+rsync -arv @[JP_INPUTDATA_ROOT]/a@[LNDRES]o@[OCNRES]/* ./INPUT
+
 
 
