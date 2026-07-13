@@ -74,6 +74,12 @@ export LIST_FILES="\
        RESTART/vegn2.res.tile6.nc" 
 
 
+# currently needs to start on 00z
+export SYEAR=2021
+export SMONTH=03
+export SDAY=22
+export SHOUR=00
+
 export FHMAX=48
 export RESTART_INTERVAL="24 -1"
 export FV3_RUN="control_run.IN lm4_common.IN"

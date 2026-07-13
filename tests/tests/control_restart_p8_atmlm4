@@ -74,6 +74,11 @@ export LIST_FILES="\
       RESTART/vegn2.res.tile6.nc" 
 
 
+# currently needs to start on 00z
+export SYEAR=2021
+export SMONTH=03
+export SDAY=22
+export SHOUR=00
 
 export FHROT=24
 export FHMAX=48
