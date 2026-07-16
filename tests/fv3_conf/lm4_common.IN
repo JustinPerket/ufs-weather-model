@@ -34,7 +34,7 @@ if [[ $ATMRES == 'C96' || $LNDRES == 'C96' ]]; then
   tar -xvf @[INPUTDATA_LM4]/c96_LM4/c96_topo_rough_land.nc.tar -C ./INPUT/
 
   # For rivers. TEMP, SHOULD BE IN INPUTDATA_LM4 IF USING RIVERS
-  tar -xvf  /gpfs/f6/gfdl_a/world-shared/model_gen5/inputs/c96_LM4/c96_OM4_025_hydrography_v20170413.tar -C ./INPUT/ \
+  tar -xvf  @[TMP_LM4_HYDRO_PATH]/c96_OM4_025_hydrography_v20170413.tar -C ./INPUT/ \
     --wildcards "river_data.tile?.nc"
 else
    echo 'Only setup for C96 is supported'

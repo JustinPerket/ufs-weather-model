@@ -775,6 +775,7 @@ case ${MACHINE_ID} in
     dprefix=${dprefix:-/gpfs/f6/${ACCNR}/proj-shared/${USER}}
     STMP=${STMP:-${dprefix}/RT_BASELINE}
     PTMP=${PTMP:-${dprefix}/RT_RUNDIRS}
+    TMP_LM4_HYDRO_PATH=/gpfs/f6/gfdl_a/world-shared/model_gen5/inputs/c96_LM4/
 
     SCHEDULER="slurm"
     ;;
@@ -827,8 +828,7 @@ case ${MACHINE_ID} in
     PTMP="${PTMP:-${dprefix}/RT_RUNDIRS}"
 
     SCHEDULER=slurm
-
-    ;;
+    TMP_LM4_HYDRO_PATH=/scratch4/GFDL/gfdlscr/Justin.Perket/model_gen5/inputs/c96_LM4    ;;
   orion)
     echo "rt.sh: Setting up orion..."
 
@@ -1251,6 +1251,7 @@ export RTPWD=${RTPWD}
 export INPUTDATA_ROOT=${INPUTDATA_ROOT}
 export INPUTDATA_ROOT_WW3=${INPUTDATA_ROOT_WW3}
 export INPUTDATA_LM4=${INPUTDATA_LM4}
+export TMP_LM4_HYDRO_PATH=${TMP_LM4_HYDRO_PATH}
 export INPUTDATA_GFSv17opn=${INPUTDATA_GFSv17opn}
 export PATHRT=${PATHRT}
 export PATHTR=${PATHTR}
