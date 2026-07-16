@@ -480,7 +480,7 @@ export_mpas ()
     export USE_MERRA2=.true.
     export NESTED=.false.
     export BLOCKSIZE=32
-    export CHKSUM_DEBUG=.false.
+    export CHKSUM_DEBUG=.true.
     export DYCORE_ONLY=.false
 
     # MPAS dynamical core defaults for RRFS
@@ -772,6 +772,8 @@ export_gfs_physics ()
 
 export_fv3 ()
 {
+export CHKSUM_DEBUG=.true.
+
 #Set defaults if ATMRES and DT_ATMOS are not set
 export ATMRES=${ATMRES:-"C96"}
 export DT_ATMOS=${DT_ATMOS:-"1800"}
@@ -815,7 +817,7 @@ export POSTAPP='global'
 export USE_MERRA2=.true.
 export NESTED=.false.
 export BLOCKSIZE=32
-export CHKSUM_DEBUG=.false.
+export CHKSUM_DEBUG=.true.
 export DYCORE_ONLY=.false.
 
 export IO_LAYOUT=1,1
@@ -1380,6 +1382,8 @@ export_tiled() {
 }
 
 export_ugwpv1() {
+  export CHKSUM_DEBUG=.true.
+
   export DO_UGWP_V1=.true.
   export DO_UGWP_V0=.false.
   export GWD_OPT=2
