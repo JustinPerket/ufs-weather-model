@@ -775,9 +775,10 @@ case ${MACHINE_ID} in
     dprefix=${dprefix:-/gpfs/f6/${ACCNR}/proj-shared/${USER}}
     STMP=${STMP:-${dprefix}/RT_BASELINE}
     PTMP=${PTMP:-${dprefix}/RT_RUNDIRS}
-    TMP_LM4_HYDRO_PATH=/gpfs/f6/gfdl_a/world-shared/model_gen5/inputs/c96_LM4/
-
     SCHEDULER="slurm"
+    # TEMP, DELETE WHEN NOT NEEDED:
+    TMP_LM4_HYDRO_PATH=/gpfs/f6/gfdl_a/world-shared/model_gen5/inputs/c96_LM4/
+    JP_INPUTDATA_ROOT=/gpfs/f6/gfdl_b/scratch/Justin.Perket/grid_specs/created_mosaic/input-data-20251015        
     ;;
   hera)
     echo "rt.sh: Setting up hera..."
@@ -826,9 +827,12 @@ case ${MACHINE_ID} in
     DISKNM="/scratch4/NAGAPE/epic/role-epic/UFS-WM_RT"
     STMP="${STMP:-${dprefix}/RT_BASELINE}"
     PTMP="${PTMP:-${dprefix}/RT_RUNDIRS}"
-
     SCHEDULER=slurm
-    TMP_LM4_HYDRO_PATH=/scratch4/GFDL/gfdlscr/Justin.Perket/model_gen5/inputs/c96_LM4    ;;
+    # TEMP, DELETE WHEN NOT NEEDED:
+    TMP_LM4_HYDRO_PATH=/scratch4/GFDL/gfdlscr/Justin.Perket/from_gaea/model_gen5/inputs/c96_LM4
+    JP_INPUTDATA_ROOT=/scratch4/GFDL/gfdlscr/Justin.Perket/grid_specs/created_mosaic/input-data-20251015        
+
+    ;;
   orion)
     echo "rt.sh: Setting up orion..."
 
@@ -1249,6 +1253,7 @@ export MACHINE_ID=${MACHINE_ID}
 export RT_COMPILER=${RT_COMPILER}
 export RTPWD=${RTPWD}
 export INPUTDATA_ROOT=${INPUTDATA_ROOT}
+export JP_INPUTDATA_ROOT=${JP_INPUTDATA_ROOT}
 export INPUTDATA_ROOT_WW3=${INPUTDATA_ROOT_WW3}
 export INPUTDATA_LM4=${INPUTDATA_LM4}
 export TMP_LM4_HYDRO_PATH=${TMP_LM4_HYDRO_PATH}

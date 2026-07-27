@@ -1,28 +1,28 @@
 ###############################################################################
 #
-#  Global control test GFSv16 atmosphere-land only at C96L127, P8 configuration
+#  Global control test GFSv16 atmosphere-land only at C48L127, P8 configuration
 #
 ###############################################################################
 
 source tests/control_p8
 
-export TEST_DESCR="Active Atmosphere and GFDL Land Model 4"
+export TEST_DESCR="Active Atmosphere and GFDL Land Model 4, C48L127"
 
-export CNTL_DIR=control_p8_atmlm4_short
+export CNTL_DIR=control_p8_atmlm4_c48
 
 export LIST_FILES="\
-      sfcf030.tile1.nc \
-      sfcf030.tile2.nc \
-      sfcf030.tile3.nc \
-      sfcf030.tile4.nc \
-      sfcf030.tile5.nc \
-      sfcf030.tile6.nc \
-      atmf030.tile1.nc \
-      atmf030.tile2.nc \
-      atmf030.tile3.nc \
-      atmf030.tile4.nc \
-      atmf030.tile5.nc \
-      atmf030.tile6.nc \
+      sfcf048.tile1.nc \
+      sfcf048.tile2.nc \
+      sfcf048.tile3.nc \
+      sfcf048.tile4.nc \
+      sfcf048.tile5.nc \
+      sfcf048.tile6.nc \
+      atmf048.tile1.nc \
+      atmf048.tile2.nc \
+      atmf048.tile3.nc \
+      atmf048.tile4.nc \
+      atmf048.tile5.nc \
+      atmf048.tile6.nc \
        RESTART/cana.res.tile1.nc \
        RESTART/cana.res.tile2.nc \
        RESTART/cana.res.tile3.nc \
@@ -73,15 +73,31 @@ export LIST_FILES="\
        RESTART/vegn2.res.tile5.nc\
        RESTART/vegn2.res.tile6.nc" 
 
+export ATMRES=C48
 
-# currently needs to start on 00z
-export SYEAR=2021
-export SMONTH=03
-export SDAY=22
-export SHOUR=00
+export_fv3
+export_tiled
+if [[ $RT_COMPILER != gnu ]]; then
+  export_ugwpv1
+  export CCPP_SUITE=FV3_GFS_v17_p8_ugwpv1
+fi
 
-export FHMAX=30
-export RESTART_INTERVAL="24 30"
+export INPES=2
+export JNPES=2
+export WRTTASK_PER_GROUP=2
+export NPZ=127
+export NPZP=128
+export NPX=49
+export NPY=49
+
+export DT_ATMOS=1200
+export DT_INNER=${DT_ATMOS}
+
+export NSTF_NAME='2,0,0,0,0'
+
+export FHMAX=48
+export RESTART_N=24
+export RESTART_INTERVAL="${RESTART_N} -1"
 export FV3_RUN="control_run.IN lm4_common.IN"
 
 export FIELD_TABLE_ADDITIONAL=field_table_lm4
@@ -89,7 +105,7 @@ export FIELD_TABLE_ADDITIONAL=field_table_lm4
 export DIAG_TABLE=diag_table_cpld.IN
 export DIAG_TABLE_ADDITIONAL=diag_additional_cpld_lm4.IN
 
-export INPUT_NML="input_atm_lm4.nml.IN"
+export INPUT_NML="input_atm_lm4_lowres.nml.IN"
 
 
 export CPLLND=.true.
@@ -112,21 +128,33 @@ export RUNTYPE=startup
 export READRESTART=.false.
 export CMEPS_RESTART_DIR=./RESTART/
 export cap_dbug_flag=0
-export ATM_tasks=144
-export LND_tasks=144
+# export ATM_tasks=144
+# export LND_tasks=144
 export lnd_ic_type=sfc
 export CALC_SNET=.false.
-export layout_x=3
-export layout_y=8
-export LNDRES=C96
-export coupling_interval_sec=1800
+# export layout_x=3
+# export layout_y=8
+export LNDRES=C48
+export coupling_interval_fast_sec=${DT_ATMOS}
+export coupling_interval_sec=${DT_ATMOS}
 export snow_albedo_option=1
 export precip_partition_option=4
 export initial_albedo=0.2
 export WRITE_DOPOST=.false.
-export OUTPUT_GRID=cubed_sphere_grid
+export OUTPUT_FH="6 -1"
+export IAER=5111
+export IOVR=3
+export IMO=192
+export JMO=94
+
+export FNSMCC_control="'global_soilmgldas.statsgo.t92.192.94.grb'"
+export FNMSKH_control="'global_slmask.t62.192.94.grb'"
+export FNSMCC=${FNSMCC_control}
+export FNMSKH=${FNMSKH_control}
+
+export OUTPUT_GRID='gaussian_grid'
 export ZSTANDARD_LEVEL=0
-export OUTPUT_FH="1 -1"
+export OUTPUT_FH="6 -1"
 export FV3_END_FMS_DIAG=.false.
 
 if [[ "$ATMRES" = "$LNDRES" ]]; then
@@ -142,5 +170,6 @@ fi
 export MOM6_TOPOEDITS=""
 
 # needed to get grid spec files
-export OCNRES=100
+export OCNRES=500
+
 
