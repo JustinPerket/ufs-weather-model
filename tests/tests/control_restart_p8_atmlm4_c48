@@ -73,15 +73,6 @@ export LIST_FILES="\
        RESTART/vegn2.res.tile5.nc\
        RESTART/vegn2.res.tile6.nc" 
 
-export ATMRES=C48
-
-export_fv3
-export_tiled
-if [[ $RT_COMPILER != gnu ]]; then
-  export_ugwpv1
-  export CCPP_SUITE=FV3_GFS_v17_p8_ugwpv1
-fi
-
 export INPES=2
 export JNPES=3
 export WRTTASK_PER_GROUP=2
@@ -149,12 +140,8 @@ export RUNTYPE=continue
 export READRESTART=.true.
 export CMEPS_RESTART_DIR=./RESTART/
 export cap_dbug_flag=0
-# export ATM_tasks=144
-# export LND_tasks=144
 export lnd_ic_type=sfc
 export CALC_SNET=.false.
-# export layout_x=3
-# export layout_y=8
 export LNDRES=C48
 export coupling_interval_fast_sec=${DT_ATMOS}
 export coupling_interval_sec=${DT_ATMOS}

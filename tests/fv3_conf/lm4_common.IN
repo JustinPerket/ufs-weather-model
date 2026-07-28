@@ -14,17 +14,17 @@ else
   # assume LNDRES is defined
 
   if [[ $LNDRES == 'C96' ]]; then
-  FV3_DIR=FV3_input_data
+    FV3_DIR=FV3_input_data
   else
-  FV3_DIR=FV3_input_data${LNDRES#C}
+    FV3_DIR=FV3_input_data${LNDRES#C}
   fi
 fi
 
 
 
-# LM4
+## LM4-specific setup
 
-# out of the box, LM4 expects aXl referenced in grid_spec.nc for grid land area. Include them for now.
+# LM4 expects aXl referenced in grid_spec.nc for grid land area.
 
 # check if ATMRES or LNDRES is equal to C96:
 if [[ $ATMRES == 'C96' || $LNDRES == 'C96' ]]; then
@@ -37,7 +37,7 @@ if [[ $ATMRES == 'C96' || $LNDRES == 'C96' ]]; then
   tar -xvf  @[TMP_LM4_HYDRO_PATH]/c96_OM4_025_hydrography_v20170413.tar -C ./INPUT/ \
     --wildcards "river_data.tile?.nc"
 else
-   echo 'Only setup for C96 is supported'
+   echo 'Only setup for C48 or C96 is supported'
 fi
 
 ln -s @[INPUTDATA_LM4]/common_LM4/biodata.nc                 ./INPUT/biodata.nc
