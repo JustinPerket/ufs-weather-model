@@ -83,6 +83,19 @@ if [ $WARM_START = .true. ]; then
     RFILE2=ufs.cpld.datm.r.${RESTART_FILE_SUFFIX_SECS}.nc
     cp ../${DEP_RUN}${SUFFIX}/${RFILE2} RESTART/.
     ls -1 "RESTART/${RFILE2}">rpointer.atm
+
+  else # 
+    # FV3 related restart files
+    cp -r ../${DEP_RUN}${SUFFIX}/INPUT/* INPUT/.
+    cp -r ../${DEP_RUN}${SUFFIX}/RESTART/${RESTART_FILE_PREFIX}.* INPUT/.
+    for RFILE in INPUT/${RESTART_FILE_PREFIX}.*; do
+      [ -e $RFILE ] || exit 1
+      RFILE_OLD=$(basename $RFILE)
+          mv -f $RFILE INPUT/"${RFILE_OLD//${RESTART_FILE_PREFIX}./}"
+    done
+    if [[ $IAU_OFFSET == 6 ]] && [[ $FHROT -le 6 ]]; then
+      cp @[INPUTDATA_ROOT]/${inputdir}/INPUT_L127_mx${OCNRES}/fv_increment*.nc INPUT/.
+    fi  
   fi
 fi
 
