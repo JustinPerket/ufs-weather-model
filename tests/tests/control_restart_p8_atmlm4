@@ -82,7 +82,8 @@ export SHOUR=00
 export FHROT=24
 export FHMAX=48
 
-
+export RESTART_N=24
+export RESTART_INTERVAL="${RESTART_N} -1"
 RST_HOUR=$(( FHROT + SHOUR ))
 if [[ $RST_HOUR -ge 24 ]]; then
   RST_HOUR=$(( RST_HOUR - 24 ))
@@ -110,6 +111,8 @@ export CPLLND=.true.
 export CPLLM4=.true.
 export CPLLND2ATM=.true.
 export CPLFLX=.false.  
+export ULTRALOW=.false.
+
 
 export UFS_CONFIGURE=ufs.configure.atm_lm4.IN
 

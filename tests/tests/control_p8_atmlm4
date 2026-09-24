@@ -81,7 +81,8 @@ export SDAY=22
 export SHOUR=00
 
 export FHMAX=48
-export RESTART_INTERVAL="24 -1"
+export RESTART_N=24
+export RESTART_INTERVAL="${RESTART_N} -1"
 export FV3_RUN="control_run.IN lm4_common.IN"
 
 export FIELD_TABLE_ADDITIONAL=field_table_lm4
@@ -96,6 +97,8 @@ export CPLLND=.true.
 export CPLLM4=.true.
 export CPLLND2ATM=.true.
 export CPLFLX=.false.  
+export ULTRALOW=.false.
+
 
 export UFS_CONFIGURE=ufs.configure.atm_lm4.IN
 
@@ -118,6 +121,7 @@ export lnd_ic_type=sfc
 export CALC_SNET=.false.
 export layout_x=3
 export layout_y=8
+export OCNRES=100
 export LNDRES=C96
 export coupling_interval_sec=720
 export snow_albedo_option=1
@@ -141,6 +145,4 @@ fi
 
 export MOM6_TOPOEDITS=""
 
-# needed to get grid spec files
-export OCNRES=100
 
