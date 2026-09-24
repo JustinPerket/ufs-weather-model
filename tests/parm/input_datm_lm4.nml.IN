@@ -191,7 +191,7 @@
 
 &river_nml
        do_rivers   = .true.
-       stop_on_mask_mismatch = .false.       
+       stop_on_mask_mismatch = .true.       
        dt_slow     = 86400.
        land_area_called_cellarea = .true.
        all_big_outlet_ctn0 = .true.

@@ -34,8 +34,8 @@ if [[ $ATMRES == 'C96' || $LNDRES == 'C96' ]]; then
   tar -xvf @[INPUTDATA_LM4]/c96_LM4/c96_topo_rough_land.nc.tar -C ./INPUT/
 
   # For rivers. TEMP, SHOULD BE IN INPUTDATA_LM4 IF USING RIVERS
-  tar -xvf  /gpfs/f6/gfdl_a/world-shared/model_gen5/inputs/c96_LM4/c96_OM4_025_hydrography_v20170413.tar -C ./INPUT/ \
-    --wildcards "river_data.tile?.nc"
+  cp /gpfs/f6/gfdl_b/scratch/Justin.Perket/river_data/UFS20250507_c96_o100/GFSmosaic_GFSFMS_ownGFSFRE/river_data.tile?.nc ./INPUT/
+
 else
    echo 'Only setup for C96 is supported'
 fi
@@ -64,6 +64,7 @@ if [ $WARM_START = .true. ]; then
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.cana.res.tile*.nc  ./INPUT/
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.glac.res.tile*.nc  ./INPUT/
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.lake.res.tile*.nc  ./INPUT/
+  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.river.res.tile*.nc ./INPUT/
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.land.res.tile*.nc  ./INPUT/
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.snow.res.tile*.nc  ./INPUT/
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.soil.res.tile*.nc  ./INPUT/
