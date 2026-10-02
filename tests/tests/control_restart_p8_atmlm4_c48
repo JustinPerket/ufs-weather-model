@@ -87,10 +87,16 @@ export DT_INNER=${DT_ATMOS}
 export NSTF_NAME='2,0,0,0,0'
 
 # # currently needs to start on 00z
+# export SYEAR=2021
+# export SMONTH=03
+# export SDAY=22
+# export SHOUR=00
+## But temp revert to get ICs from 2021032206 for now, until we can get the restart files for 2021032200
 export SYEAR=2021
 export SMONTH=03
 export SDAY=22
-export SHOUR=00
+export SHOUR=06
+
 
 export FHROT=24
 export FHMAX=48
@@ -142,7 +148,10 @@ export CMEPS_RESTART_DIR=./RESTART/
 export cap_dbug_flag=0
 export lnd_ic_type=sfc
 export CALC_SNET=.false.
+export ULTRALOW=.true.
+export ATMRES=C48
 export LNDRES=C48
+export OCNRES=500
 export coupling_interval_fast_sec=${DT_ATMOS}
 export coupling_interval_sec=${DT_ATMOS}
 export snow_albedo_option=1
@@ -176,8 +185,3 @@ else
 fi
 
 export MOM6_TOPOEDITS=""
-
-# needed to get grid spec files
-export OCNRES=500
-
-
