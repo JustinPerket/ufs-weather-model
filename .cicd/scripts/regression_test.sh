@@ -52,13 +52,6 @@ function regression_test() {
 	cd tests
 		pwd
 
-      # shellcheck disable=SC2015
-		[[ ${UFS_PLATFORM} =~ clusternoaa ]] && echo "export BL_DATE=20240426" > bl_date.conf || cat bl_date.conf
-
-		mkdir -p logs/
-		BL_DATE=$(cut -d '=' -f2 bl_date.conf)
-		export BL_DATE
-
 		if [[ ${machine} =~ "Hercules" ]]
 		then
 		    echo "Running regression tests on ${machine}"
@@ -112,12 +105,11 @@ function regression_test() {
 		    pwd
 		    cp "$(dirname "${WORKSPACE}")/RegressionTests_${machine_id}.log" "${WORKSPACE}/tests/logs/"
 		    cd "${WORKSPACE}/tests/"
-		elif [[ ${machine} =~ "Hera" ]]
+		elif [[ ${machine} =~ "Ursa" ]]
 		then
 		    echo "Running regression tests on ${machine}"
 		    export ACCNR=epic
-		    sed "s|QUEUE=batch|QUEUE=windfall|g" -i rt.sh
-		    local workflow="-r"
+		    local workflow="-e"
 		    ./rt.sh -a "${ACCNR}" "${workflow}" "${opt}" "${suite}" | tee "${WORKSPACE}/tests/logs/RT-run-${machine}.log"
 		    status=${PIPESTATUS[0]}
 		    cd logs/
@@ -133,6 +125,7 @@ function regression_test() {
 		then
 		    echo "Running regression tests on ${machine}"
 		    export ACCNR=nral0032
+		    local workflow="-e"
 		    ./rt.sh -a "${ACCNR}" "${workflow}" "${opt}" "${suite}" | tee "${WORKSPACE}/tests/logs/RT-run-${machine}.log"
 		    status=${PIPESTATUS[0]}
 		    cd logs/
