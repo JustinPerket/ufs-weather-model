@@ -69,9 +69,9 @@ if [ $WARM_START = .true. ]; then
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.soil.res.tile*.nc  ./INPUT/
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.vegn1.res.tile*.nc ./INPUT/
   cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.vegn2.res.tile*.nc ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.river.res.tile*.nc ./INPUT/
-  cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.river.res.tile*.nc* ./INPUT/
-
+  if ls ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.river.res.tile*.nc* 1> /dev/null 2>&1; then
+    cp ../${DEP_RUN}${RT_SUFFIX}/${CMEPS_RESTART_DIR}/${LM4_RESTART_PREFIX}.river.res.tile*.nc* ./INPUT/
+  fi
 
   # remove datestamp
   rename ${LM4_RESTART_PREFIX}. "" INPUT/${LM4_RESTART_PREFIX}.*.res*
