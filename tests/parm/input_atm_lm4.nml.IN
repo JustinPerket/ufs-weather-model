@@ -1,6 +1,6 @@
 &atmos_model_nml
   blocksize = @[BLOCKSIZE]
-  chksum_debug = .true.    ! TMP DEBUG
+  chksum_debug = @[CHKSUM_DEBUG]
   dycore_only = @[DYCORE_ONLY]
   ccpp_suite = '@[CCPP_SUITE]'
 /

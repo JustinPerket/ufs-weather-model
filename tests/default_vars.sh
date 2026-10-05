@@ -619,7 +619,7 @@ export_mpas() {
   USE_MERRA2=.true.
   NESTED=.false.
   BLOCKSIZE=32
-  CHKSUM_DEBUG=.true.
+  CHKSUM_DEBUG=.false.
   DYCORE_ONLY=.false
 
   # MPAS dynamical core defaults for RRFS
@@ -943,10 +943,9 @@ export_gfs_physics() {
   FRAC_ICE=.true.         # should be false for flake, true for clm_lake
 }
 
-export_fv3() {
-  CHKSUM_DEBUG=.true.
-
-  #Set defaults if ATMRES and DT_ATMOS are not set
+export_fv3 ()
+{
+#Set defaults if ATMRES and DT_ATMOS are not set
   ATMRES=${ATMRES:-"C96"}
   DT_ATMOS=${DT_ATMOS:-"1800"}
 
@@ -989,7 +988,7 @@ export_fv3() {
   USE_MERRA2=.true.
   NESTED=.false.
   BLOCKSIZE=32
-  CHKSUM_DEBUG=.true.
+  CHKSUM_DEBUG=.false.
   DYCORE_ONLY=.false.
 
   IO_LAYOUT=1,1
@@ -1550,7 +1549,7 @@ export_tiled() {
 }
 
 export_ugwpv1() {
-  CHKSUM_DEBUG=.true.
+  CHKSUM_DEBUG=.false.
 
   DO_UGWP_V1=.true.
   DO_UGWP_V0=.false.
