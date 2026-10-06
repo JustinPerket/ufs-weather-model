@@ -58,6 +58,7 @@ LIST_FILES="\
             RESTART/vegn2.res.tile6.nc"
 
 export_datm_cdeps
+export_lm4
 
 # these are not in export_datm_cdeps, but needed with LM4
 LNDRES=C48
