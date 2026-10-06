@@ -75,6 +75,7 @@ export LIST_FILES="\
 
 export_fv3
 export_tiled
+export_lm4
 if [[ $RT_COMPILER != gnu ]]; then
   export_ugwpv1
   export CCPP_SUITE=FV3_GFS_v17_p8_ugwpv1
