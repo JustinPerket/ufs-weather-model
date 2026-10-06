@@ -1,0 +1,185 @@
+###############################################################################
+#
+#  Global control test GFSv16 atmosphere-land only at C48L127, P8 configuration
+#  Restart from hour 3 of control_p8_atmlm4_c48_6h
+#
+###############################################################################
+
+source tests/control_restart_p8
+export_lm4
+
+export TEST_DESCR="Active Atmosphere and GFDL Land Model 4, C48L127, restart at 3h of 6h test"
+
+export CNTL_DIR=control_p8_atmlm4_c48_6h
+
+export LIST_FILES="\
+      sfcf006.tile1.nc \
+      sfcf006.tile2.nc \
+      sfcf006.tile3.nc \
+      sfcf006.tile4.nc \
+      sfcf006.tile5.nc \
+      sfcf006.tile6.nc \
+      atmf006.tile1.nc \
+      atmf006.tile2.nc \
+      atmf006.tile3.nc \
+      atmf006.tile4.nc \
+      atmf006.tile5.nc \
+      atmf006.tile6.nc \
+       RESTART/cana.res.tile1.nc \
+       RESTART/cana.res.tile2.nc \
+       RESTART/cana.res.tile3.nc \
+       RESTART/cana.res.tile4.nc \
+       RESTART/cana.res.tile5.nc \
+       RESTART/cana.res.tile6.nc \
+       RESTART/glac.res.tile1.nc \
+       RESTART/glac.res.tile2.nc \
+       RESTART/glac.res.tile3.nc \
+       RESTART/glac.res.tile4.nc \
+       RESTART/glac.res.tile5.nc \
+       RESTART/glac.res.tile6.nc \
+       RESTART/lake.res.tile1.nc \
+       RESTART/lake.res.tile2.nc \
+       RESTART/lake.res.tile3.nc \
+       RESTART/lake.res.tile4.nc \
+       RESTART/lake.res.tile5.nc \
+       RESTART/lake.res.tile6.nc \
+       RESTART/land.res.tile1.nc \
+       RESTART/land.res.tile2.nc \
+       RESTART/land.res.tile3.nc \
+       RESTART/land.res.tile4.nc \
+       RESTART/land.res.tile5.nc \
+       RESTART/land.res.tile6.nc \
+       RESTART/landuse.res	  \
+       RESTART/snow.res.tile1.nc \
+       RESTART/snow.res.tile2.nc \
+       RESTART/snow.res.tile3.nc \
+       RESTART/snow.res.tile4.nc \
+       RESTART/snow.res.tile5.nc \
+       RESTART/snow.res.tile6.nc \
+       RESTART/soil.res.tile1.nc \
+       RESTART/soil.res.tile2.nc \
+       RESTART/soil.res.tile3.nc \
+       RESTART/soil.res.tile4.nc \
+       RESTART/soil.res.tile5.nc \
+       RESTART/soil.res.tile6.nc \
+       RESTART/vegn1.res.tile1.nc\
+       RESTART/vegn1.res.tile2.nc\
+       RESTART/vegn1.res.tile3.nc\
+       RESTART/vegn1.res.tile4.nc\
+       RESTART/vegn1.res.tile5.nc\
+       RESTART/vegn1.res.tile6.nc\
+       RESTART/vegn2.res.tile1.nc\
+       RESTART/vegn2.res.tile2.nc\
+       RESTART/vegn2.res.tile3.nc\
+       RESTART/vegn2.res.tile4.nc\
+       RESTART/vegn2.res.tile5.nc\
+       RESTART/vegn2.res.tile6.nc" 
+
+export INPES=2
+export JNPES=3
+export WRTTASK_PER_GROUP=2
+export NPZ=127
+export NPZP=128
+export NPX=49
+export NPY=49
+
+export DT_ATMOS=1200
+export DT_INNER=${DT_ATMOS}
+
+export NSTF_NAME='2,0,0,0,0'
+
+# # currently needs to start on 00z
+# export SYEAR=2021
+# export SMONTH=03
+# export SDAY=22
+# export SHOUR=00
+## But temp revert to get ICs from 2021032206 for now, until we can get the restart files for 2021032200
+export SYEAR=2021
+export SMONTH=03
+export SDAY=22
+export SHOUR=06
+
+
+export FHROT=3
+export FHMAX=6
+
+export RESTART_N=3
+export RESTART_INTERVAL="${RESTART_N} -1"
+export LM4_RESTART_INTERVAL="0,0,0,3,0,0"
+
+export RESTART_FILE_PREFIX=$(set_restart_file_prefix)
+export RESTART_FILE_SUFFIX_SECS=$(set_restart_file_suffix_secs)
+
+
+# expected checkpoint restarts are named like: YYYYMMDD.HHMMSS.*.res*
+export LM4_RESTART_PREFIX=${RESTART_FILE_PREFIX}
+
+export FV3_RUN="control_run.IN lm4_common.IN"
+
+export FIELD_TABLE_ADDITIONAL=field_table_lm4
+
+export DIAG_TABLE=diag_table_cpld.IN
+export DIAG_TABLE_ADDITIONAL=diag_additional_cpld_lm4.IN
+
+export INPUT_NML="input_atm_lm4_lowres.nml.IN"
+
+
+export CPLLND=.true.
+export CPLLM4=.true.
+export CPLLND2ATM=.true.
+export CPLFLX=.false.  
+
+export UFS_CONFIGURE=ufs.configure.atm_lm4.IN
+
+export med_model=cmeps
+export atm_model=fv3
+export lnd_model=lm4
+export CMEPS_PIO_FORMAT='pnetcdf'
+export CMEPS_PIO_STRIDE=4
+export CMEPS_PIO_IOTASKS=-99
+export CMEPS_PIO_REARR='box'
+export CMEPS_PIO_ROOT=-99
+export CPLMODE=ufs.frac
+export RUNTYPE=continue
+export READRESTART=.true.
+export CMEPS_RESTART_DIR=./RESTART/
+export cap_dbug_flag=0
+export lnd_ic_type=sfc
+export CALC_SNET=.false.
+export ULTRALOW=.true.
+export ATMRES=C48
+export LNDRES=C48
+export OCNRES=500
+export coupling_interval_fast_sec=${DT_ATMOS}
+export coupling_interval_sec=${DT_ATMOS}
+export snow_albedo_option=1
+export precip_partition_option=4
+export initial_albedo=0.2
+export WRITE_DOPOST=.false.
+export OUTPUT_FH="6 -1"
+export IAER=5111
+export IOVR=3
+export IMO=192
+export JMO=94
+
+export FNSMCC_control="'global_soilmgldas.statsgo.t92.192.94.grb'"
+export FNMSKH_control="'global_slmask.t62.192.94.grb'"
+export FNSMCC=${FNSMCC_control}
+export FNMSKH=${FNMSKH_control}
+
+export OUTPUT_GRID='gaussian_grid'
+export ZSTANDARD_LEVEL=0
+export OUTPUT_FH="6 -1"
+export FV3_END_FMS_DIAG=.false.
+
+if [[ "$ATMRES" = "$LNDRES" ]]; then
+  export lnd_input_dir="INPUT/"
+  export mosaic_file="INPUT/${LNDRES}_mosaic.nc"
+  export samegrid_atmlnd=.true.
+else
+  export lnd_input_dir="INPUT/${LNDRES}/"
+  export mosaic_file="INPUT/${LNDRES}/${LNDRES}_mosaic.nc"
+  export samegrid_atmlnd=.false.
+fi
+
+export MOM6_TOPOEDITS=""
