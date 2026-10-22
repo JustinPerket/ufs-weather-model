@@ -861,7 +861,7 @@ case ${MACHINE_ID} in
 
     SCHEDULER="slurm"
     # TEMP: LM4 C24/C48 exchange grids not yet in INPUTDATA_ROOT
-    LM4_GRID_INPUTDATA=${LM4_GRID_INPUTDATA:-/gpfs/f6/gfdl_b/scratch/Justin.Perket/grid_specs/created_mosaic/input-data-20251015}
+    LM4_GRID_INPUTDATA=${LM4_GRID_INPUTDATA:-/gpfs/f6/gfdl_b/scratch/Justin.Perket/grid_specs/created_mosaic/input-data-20260617}
     ;;
   hera)
     echo "rt.sh: Setting up hera..."
@@ -913,7 +913,7 @@ case ${MACHINE_ID} in
 
     SCHEDULER=slurm
     # TEMP: LM4 C24/C48 exchange grids not yet in INPUTDATA_ROOT
-    LM4_GRID_INPUTDATA=${LM4_GRID_INPUTDATA:-/scratch4/GFDL/gfdlscr/Justin.Perket/grid_specs/created_mosaic/input-data-20251015}
+    LM4_GRID_INPUTDATA=${LM4_GRID_INPUTDATA:-/scratch4/GFDL/gfdlscr/Justin.Perket/grid_specs/created_mosaic/input-data-20260617}
 
     ;;
   orion)
@@ -941,6 +941,8 @@ case ${MACHINE_ID} in
     PTMP="${dprefix}/stmp"
 
     SCHEDULER="slurm"
+    # TEMP: LM4 C24/C48 exchange grids not yet in INPUTDATA_ROOT
+    LM4_GRID_INPUTDATA=${LM4_GRID_INPUTDATA:-/work/noaa/gfdlscr/jperket/grid_specs/created_mosaic/input-data-20260617}
 
     cp fv3_conf/fv3_slurm.IN_orion fv3_conf/fv3_slurm.IN
     cp fv3_conf/compile_slurm.IN_orion fv3_conf/compile_slurm.IN
