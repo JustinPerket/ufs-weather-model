@@ -67,6 +67,11 @@ LIST_FILES="\
        RESTART/vegn2.res.tile5.nc\
        RESTART/vegn2.res.tile6.nc" 
 
+# Need to set resolutions before export_fv3/export_tiled, which use ATMRES
+ATMRES=C48
+LNDRES=C48
+OCNRES=500
+
 export_fv3
 export_tiled
 export_lm4_lowres
@@ -138,9 +143,6 @@ cap_dbug_flag=0
 lnd_ic_type=sfc
 CALC_SNET=.false.
 ULTRALOW=.true.
-ATMRES=C48
-LNDRES=C48
-OCNRES=500
 coupling_interval_fast_sec=${DT_ATMOS}
 coupling_interval_sec=${DT_ATMOS}
 snow_albedo_option=1
