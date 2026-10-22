@@ -59,6 +59,7 @@ LIST_FILES="\
 
 export_datm_cdeps
 export_lm4_lowres
+LM4_RESTART_INTERVAL="0,0,0,24,0,0"
 
 # these are not in export_datm_cdeps, but needed with LM4
 LNDRES=C24
