@@ -35,7 +35,7 @@
 # area fractions for different tile types
 "land",    "frac_glac",  "frac_glac",  "land_static", "all", .false., "none", 2
 "land",    "frac_lake",  "frac_lake",  "land_static", "all", .false., "none", 2
-# tile-type areas: cell measures for the land history fields, so they must be in some file
+# cell areas must be in a file
 "land",    "area_glac",  "glac_area",  "land_static", "all", .false., "none", 2
 "land",    "area_lake",  "lake_area",  "land_static", "all", .false., "none", 2
 "land",    "area_soil",  "soil_area",  "land_static", "all", .false., "none", 2
