@@ -85,6 +85,8 @@ FHMAX=48
 
 RESTART_N=24
 RESTART_INTERVAL="${RESTART_N} -1"
+# LM4 intermediate restarts only at RESTART_N
+LM4_RESTART_INTERVAL="0,0,0,${RESTART_N},0,0"
 RESTART_FILE_PREFIX=$(set_restart_file_prefix)
 RESTART_FILE_SUFFIX_SECS=$(set_restart_file_suffix_secs)
 
@@ -138,7 +140,7 @@ initial_albedo=0.2
 ZSTANDARD_LEVEL=0
 WRITE_DOPOST=.false.
 OUTPUT_GRID=cubed_sphere_grid
-OUTPUT_FH="1 -1"
+OUTPUT_FH="48"
 FV3_END_FMS_DIAG=.false.
 
 if [[ "$ATMRES" = "$LNDRES" ]]; then

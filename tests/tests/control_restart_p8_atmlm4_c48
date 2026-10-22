@@ -102,6 +102,8 @@ FHMAX=48
 # restart at 00Z (18 h after the 06Z start): LM4 daily-averaged state is not in sub-daily restarts
 RESTART_N=18
 RESTART_INTERVAL="${RESTART_N} -1"
+# LM4 intermediate restarts only at RESTART_N
+LM4_RESTART_INTERVAL="0,0,0,${RESTART_N},0,0"
 RESTART_FILE_PREFIX=$(set_restart_file_prefix)
 RESTART_FILE_SUFFIX_SECS=$(set_restart_file_suffix_secs)
 
@@ -148,7 +150,6 @@ snow_albedo_option=1
 precip_partition_option=4
 initial_albedo=0.2
 WRITE_DOPOST=.false.
-OUTPUT_FH="6 -1"
 IAER=5111
 IOVR=3
 IMO=192
@@ -161,7 +162,7 @@ FNMSKH=${FNMSKH_control}
 
 OUTPUT_GRID='gaussian_grid'
 ZSTANDARD_LEVEL=0
-OUTPUT_FH="6 -1"
+OUTPUT_FH="48"
 FV3_END_FMS_DIAG=.false.
 
 if [[ "$ATMRES" = "$LNDRES" ]]; then

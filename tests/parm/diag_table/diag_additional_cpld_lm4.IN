@@ -8,12 +8,9 @@
 "land_static_sg",  -1,  "months", 1, "days", "time"
 "land_hourly",      1,  "hours",  1, "days", "time"
 #"land_daily",      24,  "hours",  1, "days", "time"
-"land_month",       1,  "months", 1, "days", "time"
 
 "land",    "geolon_t",   "geolon_t",   "land_static", "all", .false., "none", 1
 "land",    "geolat_t",   "geolat_t",   "land_static", "all", .false., "none", 1
-"land",    "geolon_t",   "geolon_t",   "land_month", "all", .false., "none", 1
-"land",    "geolat_t",   "geolat_t",   "land_month", "all", .false., "none", 1
 # "land",    "geolon_t",   "geolon_t",   "land_daily", "all", .false., "none", 1
 # "land",    "geolat_t",   "geolat_t",   "land_daily", "all", .false., "none", 1
 "land",    "geolon_t",   "geolon_t",   "land_hourly", "all", .false., "none", 1
@@ -39,12 +36,6 @@
 "land",    "frac_glac",  "frac_glac",  "land_static", "all", .false., "none", 2
 "land",    "frac_lake",  "frac_lake",  "land_static", "all", .false., "none", 2
 
-# # land one-level month-average output
-# #"flux",    "t_ref_land", "t_ref",      "land_month",  "all", .true., "none", 2
-"land",    "area_land",  "land_area",  "land_month",  "all", .false., "none", 2
-"land",    "area_glac",  "glac_area",  "land_month",  "all", .false., "none", 2
-"land",    "area_lake",  "lake_area",  "land_month",  "all", .false., "none", 2
-"land",    "area_soil",  "soil_area",  "land_month",  "all", .false., "none", 2
 
 # # land daily output
 # "land",  "area_ntrl",  "area_ntrl",    "land_daily",  "all", .true.,  "none", 2
