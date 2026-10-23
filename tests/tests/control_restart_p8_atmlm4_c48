@@ -69,8 +69,8 @@ LIST_FILES="\
        RESTART/vegn2.res.tile5.nc\
        RESTART/vegn2.res.tile6.nc" 
 
-INPES=2
-JNPES=3
+INPES=3
+JNPES=4
 WRTTASK_PER_GROUP=2
 NPZ=127
 NPZP=128
@@ -135,14 +135,9 @@ RUNTYPE=continue
 READRESTART=.true.
 CMEPS_RESTART_DIR=./RESTART/
 cap_dbug_flag=0
-lnd_ic_type=sfc
-CALC_SNET=.false.
 ULTRALOW=.true.
 coupling_interval_fast_sec=${DT_ATMOS}
 coupling_interval_sec=${DT_ATMOS}
-snow_albedo_option=1
-precip_partition_option=4
-initial_albedo=0.2
 WRITE_DOPOST=.false.
 IAER=5111
 IOVR=3
@@ -160,12 +155,8 @@ OUTPUT_FH="42"
 FV3_END_FMS_DIAG=.false.
 
 if [[ "$ATMRES" = "$LNDRES" ]]; then
-  lnd_input_dir="INPUT/"
-  mosaic_file="INPUT/${LNDRES}_mosaic.nc"
   samegrid_atmlnd=.true.
 else
-  lnd_input_dir="INPUT/${LNDRES}/"
-  mosaic_file="INPUT/${LNDRES}/${LNDRES}_mosaic.nc"
   samegrid_atmlnd=.false.
 fi
 
