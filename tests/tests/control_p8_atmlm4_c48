@@ -82,8 +82,8 @@ fi
 # export_fv3 resets this to .true.; quilted FV3 restarts fail the checksum on read in the restart test
 QUILTING_RESTART=.false.
 
-INPES=2
-JNPES=3
+INPES=3
+JNPES=4
 WRTTASK_PER_GROUP=2
 NPZ=127
 NPZP=128

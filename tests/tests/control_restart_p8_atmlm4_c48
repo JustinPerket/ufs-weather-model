@@ -69,8 +69,8 @@ LIST_FILES="\
        RESTART/vegn2.res.tile5.nc\
        RESTART/vegn2.res.tile6.nc" 
 
-INPES=2
-JNPES=3
+INPES=3
+JNPES=4
 WRTTASK_PER_GROUP=2
 NPZ=127
 NPZP=128
