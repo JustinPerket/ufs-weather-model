@@ -93,7 +93,7 @@ NPY=49
 DT_ATMOS=1200
 DT_INNER=${DT_ATMOS}
 
-NSTF_NAME='2,0,0,0,0'
+NSTF_NAME='2,1,0,0,0'
 
 # Since LM4 restarts only reproduce if written at 00Z, cold LM4 starts at 06Z for ATM ICs and restarts at 00Z (+18 hr),
 # and runs to the next 00Z (+42 hr) so the restart test can start and end at 00Zs to compare.
@@ -103,6 +103,7 @@ SDAY=22
 SHOUR=06
 
 FHMAX=42
+FHCYC=48
 RESTART_N=18
 RESTART_INTERVAL="${RESTART_N}"
 # LM4 intermediate restarts only at RESTART_N
