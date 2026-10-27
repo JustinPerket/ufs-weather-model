@@ -83,12 +83,14 @@ SHOUR=06
 
 FHROT=18
 FHMAX=42
-FHCYC=48
 
 RESTART_N=18
 RESTART_INTERVAL="${RESTART_N}"
 # LM4 intermediate restarts only at RESTART_N
 LM4_RESTART_INTERVAL="0,0,0,${RESTART_N},0,0"
+# LM4 river slow step counts from cold start, so use a
+# matching step divides 18 for the restart to reproduce. 
+LM4_RIVER_DT_SLOW=21600.
 RESTART_FILE_PREFIX=$(set_restart_file_prefix)
 RESTART_FILE_SUFFIX_SECS=$(set_restart_file_suffix_secs)
 
